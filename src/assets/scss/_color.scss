@@ -1,0 +1,53 @@
+
+//@each $color, $value in $colors {
+//  .fc-#{$color}{
+//    color: #{$value};
+//  }
+//  .bg-#{$color}{
+//    background-color: #{$value};
+//  }
+//}
+
+/* font color */
+.fc-ss-aqua{color:$color-ss-aqua $imt;}
+.fc-light-sky{color:$color-light-sky $imt;}
+.fc-ss-blue{color:$color-ss-blue $imt;}
+.fc-ss-pink{color:$color-ss-pink $imt;}
+.fc-tealish{color:$color-tealish $imt;}
+.fc-aqua-marine{color:$color-aqua-marine $imt;}
+.fc-yellow-orange{color:$color-yellow-orange $imt;}
+.fc-yellow-orange-2{color:$color-yellow-orange-2 $imt;}
+.fc-bright-yellow{color:$color-bright-yellow $imt;}
+.fc-dark-grey{color:$color-dark-grey $imt;}
+.fc-metal-grey{color:$color-metal-grey $imt;}
+.fc-medium-grey{color:$color-medium-grey $imt;}
+.fc-grey{color:$color-grey $imt;}
+.fc-grey-2{color:$color-grey-2 $imt;}
+.fc-light-grey{color:$color-light-grey $imt;}
+.fc-very-light-grey{color:$color-very-light-grey $imt;}
+.fc-white{color:$color-white $imt;}
+.fc-black{color:$color-black $imt;}
+.fc-green{color:$color-green $imt;}
+.fc-mid-purple{color:$color-mid-purple $imt;}
+
+/* background-color */
+.bg-ss-aqua{background-color:$color-ss-aqua $imt;}
+.bg-light-sky{background-color:$color-light-sky $imt;}
+.bg-ss-blue{background-color:$color-ss-blue $imt;}
+.bg-ss-pink{background-color:$color-ss-pink $imt;}
+.bg-tealish{background-color:$color-tealish $imt;}
+.bg-aqua-marine{background-color:$color-aqua-marine $imt;}
+.bg-yellow-orange{background-color:$color-yellow-orange $imt;}
+.bg-yellow-orange-2{background-color:$color-yellow-orange-2 $imt;}
+.bg-bright-yellow{background-color:$color-bright-yellow $imt;}
+.bg-dark-grey{background-color:$color-dark-grey $imt;}
+.bg-metal-grey{background-color:$color-metal-grey $imt;}
+.bg-medium-grey{background-color:$color-medium-grey $imt;}
+.bg-grey{background-color:$color-grey $imt;}
+.bg-grey-2{background-color:$color-grey-2 $imt;}
+.bg-light-grey{background-color:$color-light-grey $imt;}
+.bg-very-light-grey{background-color:$color-very-light-grey $imt;}
+.bg-white{background-color:$color-white $imt;}
+.bg-black{background-color:$color-black $imt;}
+.bg-green{background-color:$color-green $imt;}
+.bg-mid-purple{background-color:$color-mid-purple $imt;}

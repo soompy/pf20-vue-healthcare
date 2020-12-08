@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+// important
+$imt : unquote('!important');
+
+// item length
+$itemLength : 200;
+
+/********** color variable **********/
+$color-ss-gradient:linear-gradient(to right, #34d0ff, #62f2c6) !default;
+$color-ss-gradient-bottom:linear-gradient(to bottom, #34d0ff, #62f2c6) !default;
+
+
+/********** color variable **********/
+// Primary
+$color-ss-aqua: #00d6ee !default;
+$color-ss-blue: #007AFF !default;
+$color-ss-pink: #EF587C !default;
+
+// Secondary
+$color-tealish: #00CBE2 !default;
+$color-aqua-marine: #40C3C4 !default;
+$color-yellow-orange: #FFB300 !default;
+$color-yellow-orange-2: #FFD500 !default;
+$color-bright-yellow: #FFEE00 !default;
+$color-green: #26c68a !default;
+$color-mid-purple: #7b68db !default;
+
+// Basic
+$color-dark-grey: #343434 !default;
+$color-metal-grey: #535A63 !default;
+$color-medium-grey: #7F7F7F !default;
+$color-grey: #ABABAB !default;
+$color-grey-2: #CCCCCC !default;
+$color-light-grey: #E9EAEB !default;
+$color-very-light-grey: #F8F8F8 !default;
+$color-white: #FFFFFF !default;
+$color-black: #black !default;
+$color-light-sky: #F1FBFC !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "ss-aqua":       $color-ss-aqua,
+    "ss-blue":     $color-ss-blue,
+    "ss-pink":     $color-ss-pink,
+    "tealish":       $color-tealish,
+    "aqua-marine":        $color-aqua-marine,
+    "light-sky":        $color-light-sky,
+    "yellow-orange":     $color-yellow-orange,
+    "yellow-orange-2":     $color-yellow-orange-2,
+    "bright-yellow":      $color-bright-yellow,
+    "dark-grey":       $color-dark-grey,
+    "metal-grey":       $color-metal-grey,
+    "medium-grey":      $color-medium-grey,
+    "grey":       $color-grey,
+    "grey-2":  $color-grey-2,
+    "light-grey":  $color-light-grey,
+    "very-light-grey":  $color-very-light-grey,
+    "white":  $color-white,
+    "black":  $color-black,
+    "green": $color-green,
+    "mid-purple": $color-mid-purple
+  ),
+  $colors
+);
