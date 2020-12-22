@@ -134,6 +134,7 @@ button, a, input, img, div, span, p{-webkit-tap-highlight-color: rgba(0,0,0,0) !
 .pr-4p{padding-right: 4vw !important;}
 .pv-4p{padding-top: 4vw !important; padding-bottom: 4vw !important;}
 .ph-4p{padding-left: 4vw !important; padding-right: 4vw !important;}
+.mh-4p{margin-left: 4vw !important; margin-right: 4vw !important;}
 
 .pa-00 {padding: 0 !important;}
 @for $i from 1 through $itemLength {
@@ -511,7 +512,7 @@ input[type="checkbox"]:after {
   border-radius: 4px;
   /*border: 1px solid #808080;*/
   box-sizing: border-box;
-  background: url("../image/icon3/checkbox_off-ig.svg") top center; outline: none;
+  //background: url("../image/icon3/checkbox_off-ig.svg") top center; outline: none;
 }
 input[type="checkbox"]:checked:before {
   content: "\f00c";
@@ -529,7 +530,7 @@ input[type="checkbox"]:checked:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background: url("../image/icon3/checkbox_on-ig.svg") top center;
+  //background: url("../image/icon3/checkbox_on-ig.svg") top center;
   background-size:cover;
   border-radius: 4px;
   color:#10ceea;
@@ -562,7 +563,7 @@ input[type="radio"]:after {
   height: 100%;
   border-radius: 4px;
   /*border: 1px solid #808080;*/
-  background: url("../image/icon3/turn_off-ig.svg") top center;
+  //background: url("../image/icon3/turn_off-ig.svg") top center;
   box-sizing: border-box;
 }
 input[type="radio"]:checked:before {
@@ -581,7 +582,7 @@ input[type="radio"]:checked:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background:url("../image/icon3/radio_on-ig.svg") top center;
+  //background: url("../image/icon3/radio_on-ig.svg") top center;
   background-size:cover;
   color:#00d6ee;
   border-radius: 4px;
@@ -795,6 +796,7 @@ select.left-select{
 .wp-45 {width: 45px;}
 .wp-70 {width: 70px;}
 .wp-80 {width: 80px;}
+.wp-90 {width: 90px;}
 .wp-90 {width: 90px;}
 .wp-100 {width: 100px;}
 
@@ -1380,7 +1382,7 @@ span.title-gray{color:#868686; margin-right:5px;}
 
 .form-select-box{float:right; position:relative; width:95px; height:36px; line-height: 35px; margin-top:4px; border:1px solid #e0e0e0; border-radius:4px;}
 .form-select-box select{width:100%; height:36px; line-height: 36px; border-radius:4px;}
-.form-select-box:before{position:absolute; content:''; width:35px; height:36px; top:0; right:0; background:url('../image/icon/carrot-down-g.svg');}
+//.form-select-box:before{position:absolute; content:''; width:35px; height:36px; top:0; right:0; background:url('../image/icon/carrot-down-g.svg');}
 
 .form-select-label-box{position:relative; width:130px; height:36px; line-height: 36px; margin-top:4px; border:1px solid #e0e0e0; border-radius:4px; overflow: hidden;}
 .form-select-label-box select{
@@ -1468,15 +1470,15 @@ span.title-gray{color:#868686; margin-right:5px;}
 .opacity-10{opacity: 1 !important;}
 
 /* 공통 원형 리스트 마스크  */
-.list-circle-mask-10{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-10.png"); background-size: cover; background-position: center;}
-.list-circle-mask-15{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-15.png"); background-size: cover; background-position: center;}
-.list-circle-mask-20{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-20.png"); background-size: cover; background-position: center;}
-.list-circle-mask-30{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-30.png"); background-size: cover; background-position: center;}
-.list-circle-mask-40{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-40.png"); background-size: cover; background-position: center;}
-.list-circle-mask-50{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-50.png"); background-size: cover; background-position: center;}
-.list-circle-mask-60{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-60.png"); background-size: cover; background-position: center;}
-.list-circle-mask-70{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-70.png"); background-size: cover; background-position: center;}
-.list-circle-mask-80{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-80.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-10{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-10.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-15{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-15.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-20{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-20.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-30{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-30.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-40{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-40.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-50{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-50.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-60{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-60.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-70{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-70.png"); background-size: cover; background-position: center;}
+//.list-circle-mask-80{position:absolute; width:25vw; height:25vw; top:50%; left:50%; margin-top:-12.5vw; margin-left:-12.5vw; background: url("//image.smartscore.kr/psn3/list-circle-mask-80.png"); background-size: cover; background-position: center;}
 
 .list-mask{position:absolute; width:100%; height:100%; top:0; left:0; background-color:rgba(0,0,0,0.2); pointer-events: none; z-index: 3;}
 

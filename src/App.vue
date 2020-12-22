@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <a class="dp-b wh-50">
-        <i class="ic_list_normal wh-50 black"></i>
+      <a class="dp-ib">
+        <i class="ic_list_normal black"></i>
       </a>
       <Menu></Menu>
     </div>

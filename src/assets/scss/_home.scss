@@ -1,0 +1,41 @@
+.home {
+
+}
+
+.visual {
+  width: 100%;
+  background: #eee;
+  padding: 5vw 4vw;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+}
+.progress-wrap {
+  background: #ddd;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  .progress-bar {
+    background: #23aed2;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40%;
+  }
+}
+
+.scroll-wrap {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  .scroll-item {
+    position: relative;
+    display: inline-block;
+    .scroll-item {
+      box-shadow:  0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    }
+  }
+}
