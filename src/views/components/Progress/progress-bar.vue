@@ -1,6 +1,8 @@
 <template>
-    <div class="progress-wrap progress" data-progress-percent="25">
-        <div class="progress-bar progress"></div>
+    <div class="common_area">
+        <div class="progress-wrap progress" data-progress-percent="25">
+            <div class="progress-bar progress"></div>
+        </div>
     </div>
 </template>
 

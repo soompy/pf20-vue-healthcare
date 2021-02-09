@@ -1,5 +1,5 @@
 <template>
-    <div class="container100" style="display: none;">
+    <div class="common_area" style="display: none;">
         <div class="account">
             <span class="profile mr-16"><img src="" alt="" class="wh-20"></span>
             <div class="profile-info">

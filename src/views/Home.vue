@@ -1,10 +1,8 @@
 <template>
-  <div class="container100 home">
+  <div class="common_area home">
     <!-- 상단 -->
     <div class="visual pv-4p">
-      <h2 class="fs-18">오늘의 운동</h2>
-      <p>오늘 필요한 운동을 간단하고 효율적으로 고릅니다.</p>
-
+      <profile></profile>
       <div class="status-box">
         <div><strong>A</strong>님의 진행도</div>
         <progress-bar></progress-bar>
@@ -34,9 +32,12 @@
 
 import AutoPer from "./components/swiper/auto-per";
 import ProgressBar from "./components/Progress/progress-bar";
+import Profile from "./components/layouts/profile";
+
 export default {
   name: 'Home',
   components: {
+    Profile,
     ProgressBar,
     AutoPer,
   }
