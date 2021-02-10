@@ -1,6 +1,5 @@
 <template>
   <div class="common_area">
-    <h2>page</h2>
     <calendar></calendar>
   </div>
 </template>

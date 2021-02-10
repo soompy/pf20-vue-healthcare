@@ -7,6 +7,7 @@
 
 <script>
 
+
   export default {
     name: 'Grape',
     data() {
@@ -16,7 +17,7 @@
     },
     components: {
 
-    }
+    },
   }
 </script>
 

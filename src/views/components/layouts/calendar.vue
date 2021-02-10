@@ -15,8 +15,7 @@
             }
         },
         components: {
-            Calendar,
-            DatePicker
+
         }
     }
 </script>
