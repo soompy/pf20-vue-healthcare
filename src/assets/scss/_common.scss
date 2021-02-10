@@ -31,6 +31,7 @@ button, a, input, img, div, span, p{-webkit-tap-highlight-color: rgba(0,0,0,0) !
 }
 .content-bd-box{position:relative; width:94.444444%; margin:0 auto; border:1px solid #e0e0e0; padding:10px 2.95%; border-radius: 4px;}
 .container100{position:relative; width:100%; margin:0 auto;}
+
 .container-line{
   position:relative;
   width:100%;
@@ -1390,6 +1391,19 @@ span.title-gray{color:#868686; margin-right:5px;}
   background:url("//image.smartscore.kr/psn3/icon3/arrow_down-ig.svg") no-repeat 102% 4px;
   background-size: 26px;
 }
+
+/* 공통 리스트 스크롤  */
+.list-scroll-00{width:0 !important;}
+@for $i from 1 through 100 {
+  @if $i <  10 {
+    .list-scroll-0#{$i} { width:0vw  + $i $imt;}
+  }@else{
+    .list-scroll-#{$i} {width:0vw  + $i $imt;}
+  }
+}
+
+
+
 
 /* 공통 검색 ui  */
 .app-search-form{position:relative; float:left; width:calc(100% - 100px); height:40px; line-height: 0;}

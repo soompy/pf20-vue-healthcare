@@ -1,0 +1,43 @@
+/* 컴포넌트에 적용되는 ui들 */
+
+
+//swiper slide banner
+.flex-list-scrollX-wrap {
+  overflow-x: scroll;
+  padding-left: 4vw;
+  .flex-list-scrollX-con {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .flex-list-scrollX-item {
+      display: inline-flex;
+      position: relative;
+      white-space: nowrap;
+      .gift-list-item {
+        .list-item {
+          white-space: normal;
+          font-size: initial;
+        }
+      }
+      &.gift-main {
+        margin-bottom: 15px;
+        &:nth-of-type(n+6) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &.one-line {
+      flex-wrap: nowrap;
+      min-width: 100% !important;
+      max-width: calc(144vw + 60px) !important;
+      .flex-list-scrollX-item {
+        &:last-child {
+          padding-right: 4vw;
+        }
+      }
+    }
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

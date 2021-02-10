@@ -48,6 +48,7 @@
 
 <script>
     import ProgressBar from "../Progress/progress-bar";
+
     export default {
         name: 'AutoPer',
         components: {ProgressBar},
