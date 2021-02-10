@@ -6,9 +6,17 @@
                     <span class="illur-species-bg glass"></span>
                     <p class="target-category">수분 섭취량을 <br>확인해요!</p>
                 </div>
+                <div class="list-item fc-dark-grey">
+                    <span class="illur-species-bg glass"></span>
+                    <p class="target-category">수분 섭취량을 <br>확인해요!</p>
+                </div>
             </swiper-slide>
 
             <swiper-slide class="slide-list-item" :class="slideWidthClass">
+                <div class="list-item fc-dark-grey">
+                    <span class="illur-species-bg heartbeat"></span>
+                    <p class="target-category">혈압을 <br>기록해요!</p>
+                </div>
                 <div class="list-item fc-dark-grey">
                     <span class="illur-species-bg heartbeat"></span>
                     <p class="target-category">혈압을 <br>기록해요!</p>
@@ -20,9 +28,17 @@
                     <span class="illur-species-bg blood"></span>
                     <p class="target-category">혈당을 <br>기록해요!</p>
                 </div>
+                <div class="list-item fc-dark-grey">
+                    <span class="illur-species-bg blood"></span>
+                    <p class="target-category">혈당을 <br>기록해요!</p>
+                </div>
             </swiper-slide>
 
             <swiper-slide class="slide-list-item" :class="slideWidthClass">
+                <div class="list-item fc-dark-grey">
+                    <span class="illur-species-bg running"></span>
+                    <p class="target-category">러닝을 <br>기록해요!</p>
+                </div>
                 <div class="list-item fc-dark-grey">
                     <span class="illur-species-bg running"></span>
                     <p class="target-category">러닝을 <br>기록해요!</p>
@@ -43,13 +59,12 @@
                 </div>
             </swiper-slide>
         </swiper>
-
     </div>
 </template>
 
 <script>
     export default {
-        name: 'VisualSwiper',
+        name: 'visualSwiperDouble',
         data() {
             return {
                 swiperOptions: {

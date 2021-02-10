@@ -91,7 +91,6 @@
         },
         mounted() {
             console.log('Current Swiper instance object', this.swiper)
-            this.swiper.slideTo(3, 1000, false)
         },
         component: {
             ProgressBar,

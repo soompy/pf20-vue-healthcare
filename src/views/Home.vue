@@ -11,6 +11,16 @@
     <!-- 상단 -->
 
     <div class="container100 mv-20 ph-4p">
+
+      <router-link to="/">홈</router-link>
+      <router-link to="/about">소개</router-link>
+      <router-link to="/notice">공지</router-link>
+      <router-link to="/login">로그인</router-link>
+      <router-link to="/mypage">마이페이지</router-link>
+      <router-link to="/note">메모</router-link>
+      <router-link to="/common-ui">공통유아이</router-link>
+
+
       <!-- 진척도 콘텐츠 -->
       <auto-per></auto-per>
       <!-- 진척도 콘텐츠 -->

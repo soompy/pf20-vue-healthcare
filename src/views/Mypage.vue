@@ -1,22 +1,20 @@
 <template>
   <div class="common_area">
-    <h2>about page</h2>
-    <visual-swiper></visual-swiper>
+    <h2>page</h2>
+
   </div>
 </template>
 
 <script>
 
-  import VisualSwiper from "./components/swiper/visualSwiper";
   export default {
-    name: 'About',
+    name: 'Mypage',
     data() {
       return {
 
       }
     },
     components: {
-      VisualSwiper
 
     }
   }
