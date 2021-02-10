@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <a class="dp-ib">
-        <i class="ic_list_normal black"></i>
-      </a>
-      <Menu></Menu>
+    <div class="nav">
+      <router-link to="/nav"><span class="hamburger-menu"><i class="ic_list_normal wh-30 dark-grey"></i></span></router-link>
+      <router-link to="/"><h1 class="logo"><i class="ic_plane wh-30 ss-blue mr-06"></i>날다</h1></router-link>
+      <!-- vue router  https://router.vuejs.org/kr/guide/#javascript -->
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-  import Menu from "./views/components/gnb/Menu";
 
   export default {
     components: {
-      Menu,
-    }
+
+    },
+    methods: {
+      clickItem (item) {
+        console.log('PracticeHomeList::clickItem::', item)
+        this.$emit('clickItem', item)
+      }
+    },
   }
 </script>
 
