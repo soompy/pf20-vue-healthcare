@@ -2,8 +2,12 @@
   <div id="app">
     <div class="nav">
       <router-link to="/nav"><span class="hamburger-menu"><i class="ic_list_normal wh-30 dark-grey"></i></span></router-link>
-      <router-link to="/"><h1 class="logo"><i class="ic_plane wh-30 ss-blue mr-06"></i>날다</h1></router-link>
+      <router-link to="/"><h1 class="logo"><i class="ic_level_filled wh-30 ss-blue mr-06"></i>헬스차트</h1></router-link>
       <!-- vue router  https://router.vuejs.org/kr/guide/#javascript -->
+
+
+      <router-link to="/"><h1 class="logo"><i class="ic_more_2 wh-30 ss-blue mr-06"></i></h1></router-link>
+
     </div>
     <router-view/>
   </div>
@@ -20,7 +24,7 @@
         console.log('PracticeHomeList::clickItem::', item)
         this.$emit('clickItem', item)
       }
-    },
+    }
   }
 </script>
 
@@ -37,9 +41,4 @@
       padding: 10px;
     }
   }
-  @import '/assets/css/color.css';
-  @import '/assets/css/common.css';
-  @import '/assets/css/home.css';
-  @import '/assets/css/variable.css';
-  @import '/assets/css/import.css';
 </style>
