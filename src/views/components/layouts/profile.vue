@@ -1,7 +1,7 @@
 <template>
     <div class="profile-box">
         <h2 class="profile-title">Hi Suri</h2>
-        <p class="profile-subtitle">오늘 필요한 운동을 간단하고 효율적으로 고릅니다.</p>
+        <p class="profile-subtitle">운동을 시작하세요!</p>
     </div>
 </template>
 
@@ -18,12 +18,14 @@
 
 <style lang="scss" scoped>
     .profile-box {
-        .profile-title {
-            text-align: left;
-            font-size: 18px;
+        text-align: left;
+        .profile-title {        
+            font-size: 24px;  
+            font-weight: bold;          
         }
         .profile-subtitle {
             font-size: 14px;
+            margin: 6px 0;
         }
     }
 </style>

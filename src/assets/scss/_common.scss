@@ -678,6 +678,24 @@ select.left-select{
   }
 }
 
+#app {
+  font-size: 16px;
+  &.jb-default {
+    font-size: 13px;
+  }
+  &.jb-percentage {
+    font-size: 150%;
+  }
+  &.jb-em {
+    font-size: 1.5em;
+  }
+  &.jb-rem {
+    font-size: 1.5rem;
+  }
+}
+
+
+
 /* line height */
 .lh-00 {line-height: 0 !important;}
 .lh-10 {line-height: 1 !important;}
@@ -1396,7 +1414,7 @@ span.title-gray{color:#868686; margin-right:5px;}
 .list-scroll-00{width:0 !important;}
 @for $i from 1 through 100 {
   @if $i <  10 {
-    .list-scroll-0#{$i} { width:0vw  + $i $imt;}
+    .list-scroll-#{$i} { width:0vw  + $i $imt;}
   }@else{
     .list-scroll-#{$i} {width:0vw  + $i $imt;}
   }

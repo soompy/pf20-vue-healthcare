@@ -9,11 +9,10 @@
         </div>
         <router-link to="/">Home</router-link>
         <router-link to="/mypage">Mypage</router-link>
-        <router-link to="/grape">Grape</router-link>
+        <router-link to="/planner">Planner</router-link>
         <router-link to="/note">Note</router-link>
         <router-link to="/community">Community</router-link>
         <router-link to="/notice">Notice</router-link>
-        <router-link to="/grape">Grape</router-link>
         <router-link to="/common-ui">commonUi</router-link>
         <router-link to="/login">Login</router-link>
     </div>

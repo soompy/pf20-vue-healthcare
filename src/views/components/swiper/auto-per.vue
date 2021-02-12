@@ -47,7 +47,7 @@
 </template>
 
 <script>
-    import ProgressBar from "../Progress/progress-bar";
+    import ProgressBar from "../graph/progress-bar";
 
     export default {
         name: 'AutoPer',

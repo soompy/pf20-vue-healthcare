@@ -1,12 +1,11 @@
 <template>
     <div class="area_common">
-        <v-calendar></v-calendar>
+        <v-calendar is-expanded />
         <v-date-picker v-model='selectedDate' />
     </div>
 </template>
 
 <script>
-
     export default {
         name: 'Calendar',
         data() {
