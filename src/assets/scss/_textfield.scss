@@ -197,7 +197,7 @@ input[type=text],input[type=search],input[type=password]{
     line-height: $input-h !important;
     padding:0;
     border:none;
-    font-size:15px !important;
+    font-size:14px !important;
     color:$form-input-text;
     outline:none;
     &:valid, &:focus, &[readonly]{
@@ -424,6 +424,7 @@ input[type=text],input[type=search],input[type=password]{
     &::-webkit-file-upload-button { cursor:pointer; }
   }
   .file-icon-box{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
