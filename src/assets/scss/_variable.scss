@@ -25,6 +25,7 @@ $color-yellow-orange-2: #FFD500 !default;
 $color-bright-yellow: #FFEE00 !default;
 $color-green: #26c68a !default;
 $color-mid-purple: #7b68db !default;
+$color-red: #ff0000 !default;
 
 // Basic
 $color-dark-grey: #343434 !default;
@@ -35,7 +36,7 @@ $color-grey-2: #CCCCCC !default;
 $color-light-grey: #E9EAEB !default;
 $color-very-light-grey: #F8F8F8 !default;
 $color-white: #FFFFFF !default;
-$color-black: #black !default;
+$color-black: #000000 !default;
 $color-light-sky: #F1FBFC !default;
 
 $colors: () !default;
@@ -60,7 +61,8 @@ $colors: map-merge(
     "white":  $color-white,
     "black":  $color-black,
     "green": $color-green,
-    "mid-purple": $color-mid-purple
+    "mid-purple": $color-mid-purple,
+    "red": $color-red
   ),
   $colors
 );

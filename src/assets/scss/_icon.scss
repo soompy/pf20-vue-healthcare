@@ -1,0 +1,50 @@
+/********************************************************/
+/* icon */
+/********************************************************/
+
+[class^="ic_"]{
+  display: inline-block;
+  width: 36px; height: 36px;
+  transition: all 0.5s ease-in-out;
+}
+
+// 아이콘 효과 keyframes
+@keyframes loader2{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+@keyframes loader1{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(90deg);}
+}
+@keyframes swing {
+  20% {transform: rotate3d(0, 0, 1, 15deg);}
+  40% {transform: rotate3d(0, 0, 1, -10deg);}
+  60% {transform: rotate3d(0, 0, 1, 5deg);}
+  80% {transform: rotate3d(0, 0, 1, -5deg);}
+  to  {transform: rotate3d(0, 0, 1, 0deg);}
+}
+@keyframes rotateIn {
+  from  {transform: rotate3d(0, 0, 1, -200deg);opacity: 0;}
+  to    {transform: translate3d(0, 0, 0);opacity: 1;}
+}
+@keyframes pulse {
+  from  {transform: scale3d(1, 1, 1);}
+  50%   {transform: scale3d(1.05, 1.05, 1.05);}
+  to    {transform: scale3d(1, 1, 1);}
+}
+
+.ic_settings{
+  &:hover{animation: loader2 2.0s linear infinite;}
+}
+.ic_bell{
+  &:hover{animation: swing 0.8s linear infinite;}
+}
+.ic_close,.button-close,.ic_close_bold{
+  &:hover{animation: loader1 0.4s linear;}
+}
+.player-button {
+  &:hover{
+    .ic_play_gradient{transform: scale3d(1.05, 1.05, 1.05);}
+  }
+}

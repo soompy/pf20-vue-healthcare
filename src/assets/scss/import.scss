@@ -4,11 +4,18 @@
 
 /* Configuration */
 @import './variable';
-@import './color';
 @import './svg';
 @import './reset';
 @import './common';
 @import './normalize';
+
+/* Base */
+//@import './base';
+//@import './font';
+//@import './typography';
+@import './icon';
+@import './color';
+
 
 /* components */
 //@import './inputField';
@@ -20,6 +27,8 @@
 //@import './svg';
 @import './ui';
 @import './layouts';
+@import './textfield';
+
 
 /* Layout */
 //@import './common';

@@ -5,6 +5,10 @@
 
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">더블 슬라이드</h2>
         <visual-swiper-double></visual-swiper-double>
+
+        <h1>
+            <router-link to="/common-textfield">공통 텍스트필드</router-link>
+        </h1>
     </div>
 </template>
 
