@@ -24,6 +24,11 @@
     </div>
 
     <div class="field-button-box">
+        <ul class="social-login">
+            <li class=""><button><span class="sns-icon facebook"></span>페이스북</button></li>
+            <li><button><span class="sns-icon twitter"></span>트위터</button></li>
+            <li><button><span class="sns-icon instagram"></span>인스타그램</button></li>
+        </ul>
         <button class="button-round">{{ loginBtn }}</button>
     </div>
   </div>
@@ -58,7 +63,7 @@
   }
   .signin-subtitle {
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
   .common_area {
     display: flex;
@@ -67,16 +72,57 @@
   }
   .field-button-box {
     margin-top: auto;
-    background: #f3df4d;
-    padding: 12px;
-    &:hover, &:focus {
-      background: #888888;
-      .button-round {
-        color: #fff;
-        font-weight: bold;
-      }
+    .social-login {
+        display: flex;
+        align-items: center;
+        li {
+            flex: 1;
+            padding: 6px 0;
+            .sns-icon {
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin: 0 auto 3px;
+                background: url('../assets/images/snslogo.png') no-repeat;
+                background-size: 120px;
+                &.facebook {
+                    background-position: 0 -138px;
+                }
+                &.twitter {
+                    background-position: -40px -138px;
+                }
+                &.instagram {
+                    background-position: -80px -138px;
+                }
+            }
+            &.active, &:hover, &:focus {
+                .sns-icon {
+                    &.facebook {
+                        background-position: 0 0;
+                    }
+                    &.twitter {
+                        background-position: -40px 0;
+                    }
+                    &.instagram {
+                        background-position: -80px 0;
+                    }
+                }
+            }
+        }
     }
+      .button-round {
+          width: 100%;
+          height: 50px;
+          background: #f3df4d;
+          font-weight: bold;
+          transition: all 0.4s ease-in;
+          &:hover, &:focus {
+              background: #888888;
+              color: #fff;
+          }
+      }
   }
+
   .form-error-msg {
     font-size: 12px;
     color: #ff0000;
