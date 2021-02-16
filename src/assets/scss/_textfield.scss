@@ -102,6 +102,7 @@ input[type=text],input[type=search],input[type=password]{
   $field-title-w:120px;
 
   display: flex;
+  align-items: center;
   //flex-basis: 100%;
   position:relative;
   width: 100%;
