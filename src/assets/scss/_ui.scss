@@ -56,3 +56,102 @@
   font-size: 0;
 }
 .slide-list-item {position:relative; display: inline-block; margin-right: 10px; }
+
+
+
+// 버튼
+//큰 버튼
+.large-button {
+  font-size: 15px;
+  width: 100%;
+  height: 56px;
+  &.large_fill_button {background: #f3df4d;}
+  &.large_fill_button {background: #f3df4d;}
+  &.large_fill_button.grey {background: #ABABAB;color: #fff;text-shadow: 1px 1px 5px #1a1a1a;}
+  &.large_fill_button.blue {background: #00306b;color: #fff;}
+  &:disabled {
+    background: #666666;
+    color: #ccc;
+  }
+}
+
+//레귤러 버튼
+.regular-button {
+  font-size: 14px;
+  width: 100%;
+  height: 46px;
+  &.regular_fill_button {background: #f3df4d;}
+  &.regular_fill_button.grey {background: #ABABAB;color: #fff;text-shadow: 1px 1px 5px #1a1a1a;}
+  &.regular_fill_button.blue {background: #00306b;color: #fff;}
+  &:disabled {
+    background: #666666;
+    color: #ccc;
+  }
+
+  &.regular_line_button {
+    background: #ffffff;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    &.blue {
+      color: #00306b;
+    }
+    &:disabled {
+      background: #666666;
+      color: #ccc;
+    }
+  }
+}
+
+//스몰 버튼
+.small-button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 8px 16px;
+  &.small_fill_button {background: #f3df4d;}
+  &.small_fill_button.grey {background: #ABABAB;color: #fff;text-shadow: 1px 1px 5px #1a1a1a;}
+  &.small_fill_button.blue {background: #00306b;color: #fff;}
+  &:disabled {
+    background: #666666;
+    color: #ccc;
+  }
+
+  &.small_line_button {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    &.blue {
+      color: #00306b;
+    }
+    &:disabled {
+      background: #666666;
+      color: #ccc;
+    }
+  }
+  &.small_text_button {
+
+    &.blue {
+      color: #00306b;
+    }
+    &:disabled {
+      background: #666666;
+      color: #ccc;
+    }
+  }
+}
+
+// 라운드 버튼
+.round-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+  &.round_fill_button {
+    background: #00306b;
+
+  }
+  &.round_line_button {
+    border: 1px solid #ccc;
+  }
+}

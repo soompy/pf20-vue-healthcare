@@ -29,7 +29,7 @@
             <li><button><span class="sns-icon twitter"></span>트위터</button></li>
             <li><button><span class="sns-icon instagram"></span>인스타그램</button></li>
         </ul>
-        <button class="button-round">{{ loginBtn }}</button>
+        <button class="large-button large_fill_button">{{ loginBtn }}</button>
     </div>
   </div>
 </template>
@@ -109,17 +109,6 @@
             }
         }
     }
-      .button-round {
-          width: 100%;
-          height: 50px;
-          background: #f3df4d;
-          font-weight: bold;
-          transition: all 0.4s ease-in;
-          &:hover, &:focus {
-              background: #888888;
-              color: #fff;
-          }
-      }
   }
 
   .form-error-msg {
