@@ -1,12 +1,18 @@
 <template>
-  <div class="common_area">  
+  <div class="common_area">
     <tab-menu :menus="menus" :cur-idx="curTab" @changed-tab="selectedMenu"></tab-menu>
+
+<!--    더하기 버튼 클릭시-->
+<!--    노트 타입선택 > 시간설정 > 노트 입력페이지(제목, 이모티콘) > 저장 후 노트 등록완료-->
+
+    <NoteList/>
 
   </div>
 </template>
 
 <script>
 import TabMenu from './components/tab/TabMenu.vue'
+import NoteList from "./components/note/noteList";
 
   export default {
     name: 'Note',
@@ -23,6 +29,7 @@ import TabMenu from './components/tab/TabMenu.vue'
 
     },
     components: {
+        NoteList,
         TabMenu
     },
     methods: {
