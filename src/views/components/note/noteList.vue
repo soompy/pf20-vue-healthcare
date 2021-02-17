@@ -3,7 +3,7 @@
         <div class="note-list-wrap">
             <ul class="note-list-box">
                 <li class="note-list">
-                    <h2 class="note-title">{{ noteTitle }}</h2>
+                    <h2 class="note-title-box"><p class="note-title">{{ noteTitle }}</p> <span class="date">2021.02.17 WED</span></h2>
                     <div class="category-tag">
                         <span>건강</span>
                         <span>계획</span>
@@ -24,7 +24,7 @@
                 </li>
 
                 <li class="note-list">
-                    <h2 class="note-title">{{ noteTitle }}</h2>
+                    <h2 class="note-title-box"><p class="note-title">{{ noteTitle }}</p> <span class="date">2021.02.17 WED</span></h2>
                     <div class="category-tag">
                         <span>건강</span>
                         <span>계획</span>
@@ -45,7 +45,7 @@
                 </li>
 
                 <li class="note-list">
-                    <h2 class="note-title">{{ noteTitle }}</h2>
+                    <h2 class="note-title-box"><p class="note-title">{{ noteTitle }}</p> <span class="date">2021.02.17 WED</span></h2>
                     <div class="category-tag">
                         <span>건강</span>
                         <span>계획</span>
@@ -66,7 +66,7 @@
                 </li>
 
                 <li class="note-list">
-                    <h2 class="note-title">{{ noteTitle }}</h2>
+                    <h2 class="note-title-box"><p class="note-title">{{ noteTitle }}</p> <span class="date">2021.02.17 WED</span></h2>
                     <div class="category-tag">
                         <span>건강</span>
                         <span>계획</span>
@@ -112,12 +112,27 @@
         padding: 0 4vw;
         .note-list-box {
             li.note-list {
-                padding: 12px 0;
-                border-bottom: 1px solid #e0e0e0;
-                .note-title {
+                padding: 16px 0;
+                border-bottom: 1px solid #eeeeee;
+                .note-title-box {
+                    display: flex;
+                    align-items: center;
                     font-size: 16px;
-                    font-weight: bold;
+                    font-weight: 500;
                     text-align: left;
+                    color: #666666;
+                    .note-title {
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        white-space:nowrap;
+                    }
+                    .date {
+                        flex-shrink: 0;
+                        margin-left: auto;
+                        font-size: 12px;
+                        font-weight: 300;
+                        color: #999;
+                    }
                 }
                 .category-tag {
                     display: flex;
