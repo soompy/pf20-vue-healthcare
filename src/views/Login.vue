@@ -68,7 +68,6 @@
   .common_area {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 60px);
   }
   .field-button-box {
     margin-top: auto;

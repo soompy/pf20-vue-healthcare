@@ -88,7 +88,15 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/components/layouts/commonTextfield.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/components/ui/commonTextfield.vue')
+  },
+  {
+    path: '/common-button',
+    name: 'CommonButton',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/components/ui/commonButton.vue')
   }
 
 ]

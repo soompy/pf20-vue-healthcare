@@ -13,9 +13,9 @@ $color-ss-gradient-bottom:linear-gradient(to bottom, #34d0ff, #62f2c6) !default;
 
 /********** color variable **********/
 // Primary
-$color-ss-aqua: #00d6ee !default;
-$color-ss-blue: #007AFF !default;
-$color-ss-pink: #EF587C !default;
+$color-primary: #f3df4d !default;
+$color-blue: #00306b !default;
+
 
 // Secondary
 $color-tealish: #00CBE2 !default;
@@ -42,9 +42,8 @@ $color-light-sky: #F1FBFC !default;
 $colors: () !default;
 $colors: map-merge(
   (
-    "ss-aqua":       $color-ss-aqua,
-    "ss-blue":     $color-ss-blue,
-    "ss-pink":     $color-ss-pink,
+    "primary":       $color-primary,
+    "blue":       $color-blue,
     "tealish":       $color-tealish,
     "aqua-marine":        $color-aqua-marine,
     "light-sky":        $color-light-sky,

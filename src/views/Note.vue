@@ -7,6 +7,7 @@
 
     <NoteList/>
 
+    <button class="add-note"></button>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="area_common">
+    <div class="cp_common_area">
         <v-calendar is-expanded />
         <v-date-picker v-model='selectedDate' />
     </div>

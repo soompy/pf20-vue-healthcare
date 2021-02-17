@@ -1,5 +1,5 @@
 <template>
-    <div class="common_area">
+    <div class="cp_common_area">
         <div class="note-list-wrap">
             <ul class="note-list-box">
                 <li class="note-list">

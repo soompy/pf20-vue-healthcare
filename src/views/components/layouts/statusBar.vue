@@ -1,5 +1,5 @@
 <template>
-    <div class="common_area">
+    <div class="cp_common_area">
         <div><strong>Suri</strong>님의 진행도</div>
         <progress-bar></progress-bar>
     </div>

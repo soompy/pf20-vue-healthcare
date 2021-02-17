@@ -1,5 +1,5 @@
 <template>
-    <div class="common_area">
+    <div class="cp_common_area">
         <div class="progress-wrap progress" data-progress-percent="25">
             <div class="progress-bar progress"></div>
         </div>
@@ -21,7 +21,7 @@
         overflow: hidden;
         position: relative;
         background: #96999b;
-        margin: 10px 0;    
+        margin: 10px 0;
         box-shadow: 1px 2px 3px #eee;
         .progress-bar {
             background: #f3df4d;

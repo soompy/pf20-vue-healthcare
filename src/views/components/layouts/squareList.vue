@@ -1,6 +1,6 @@
 <template>
-  <div class="common_area">
-    <ul class="square-list">
+    <div class="cp_common_area">
+        <ul class="square-list">
       <li class="square-item">
           <div class="list-item-title">
               <div class="detail-item-info">
@@ -30,7 +30,7 @@
           </div>
           <div class="item-graph">
               graph area
-          </div>        
+          </div>
       </li>
       <li class="square-item">
           <div class="list-item-title">
@@ -67,7 +67,7 @@
           </div>
       </li>
     </ul>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -77,7 +77,7 @@ export default {
     return {};
   },
   components: {
-    
+
   }
 };
 </script>
@@ -101,8 +101,8 @@ export default {
             }
             .list-item-title {
                 display: flex;
-                align-items: center;   
-                padding-bottom: 16px;             
+                align-items: center;
+                padding-bottom: 16px;
                 .detail-item-info {
                     text-align: left;
                     h3 {
@@ -125,8 +125,8 @@ export default {
                     }
                     &.weight {
                         background: green;
-                    }                    
-                }             
+                    }
+                }
             }
             .item-fighre {
                 margin-top: auto;

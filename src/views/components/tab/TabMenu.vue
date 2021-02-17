@@ -1,5 +1,5 @@
 <template>
-  <div class="common_area">
+  <div class="cp_common_area">
       <ul class="tab-menu-box">
 <!--          <li class="tab-list" :class="[selIdx === idx ? active : '']" v-for="(a, idx) in menus" :key="idx" @click="selectedMenu(idx, a)"></li>        -->
           <li class="tab-list active"><span>탭메뉴1</span></li>
