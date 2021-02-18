@@ -7,13 +7,13 @@
 
     <NoteList/>
 
-    <button class="add-note"></button>
+    <button class="round-button round_line_button" @click="addNote"><i class="ic_plus wh-26 grey"></i></button>
   </div>
 </template>
 
 <script>
-import TabMenu from './components/tab/TabMenu.vue'
-import NoteList from "./components/note/noteList";
+import TabMenu from '../../components/tab/TabMenu.vue'
+import NoteList from "../../components/note/noteList";
 
   export default {
     name: 'Note',
@@ -37,11 +37,19 @@ import NoteList from "./components/note/noteList";
       selectedMenu (idx, menu) {
         console.log('TabMenu::selectedMenu::', idx, menu)
         this.$emit('changed-tab', idx, menu)
+      },
+
+      addNote () {
+        this.$router.push({ path: 'create-note' })
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-
+  .round-button {
+    position: fixed;
+    top: 80px;
+    right: 4vw;
+  }
 </style>

@@ -7,7 +7,7 @@
 
 <script>
 
-  import VisualSwiper from "./components/swiper/visualSwiper";
+  import VisualSwiper from "../../components/swiper/visualSwiper";
   export default {
     name: 'About',
     data() {

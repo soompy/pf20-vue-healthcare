@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Calendar from './components/layouts/calendar.vue'
+import Calendar from '../../components/layouts/calendar.vue'
 
   export default {
     name: 'Community',

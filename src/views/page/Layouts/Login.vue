@@ -82,7 +82,7 @@
                 width: 40px;
                 height: 40px;
                 margin: 0 auto 3px;
-                background: url('../assets/images/snslogo.png') no-repeat;
+                background: url('../../../assets/images/snslogo.png') no-repeat;
                 background-size: 120px;
                 &.facebook {
                     background-position: 0 -138px;

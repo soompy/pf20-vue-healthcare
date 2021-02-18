@@ -44,11 +44,11 @@
 // @ is an alias to /src
 
 
-import AutoPer from "./components/swiper/auto-per";
-import ProgressBar from "./components/graph/progress-bar";
-import Profile from "./components/layouts/profile";
-import SquareList from './components/layouts/squareList.vue';
-import MiniCalendar from './components/layouts/miniCalendar.vue';
+import AutoPer from "../../components/swiper/auto-per";
+import ProgressBar from "../../components/graph/progress-bar";
+import Profile from "../../components/layouts/profile";
+import SquareList from '../../components/layouts/squareList.vue';
+import MiniCalendar from '../../components/layouts/miniCalendar.vue';
 
 export default {
   name: 'Home',
@@ -64,8 +64,8 @@ export default {
 
 <style lang="scss" scoped>
   .visual {
-        width: 100%;      
-        padding: 5vw 4vw;        
+        width: 100%;
+        padding: 5vw 4vw;
         .nickname-info {
           text-align: left;
           font-size: 14px;

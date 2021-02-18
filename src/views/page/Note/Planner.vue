@@ -1,14 +1,14 @@
 <template>
-  <div class="common_area">    
+  <div class="common_area">
     <calendar class="mt-20"></calendar>
     <tab-menu></tab-menu>
-    
+
   </div>
 </template>
 
 <script>
-import Calendar from './components/layouts/calendar.vue'
-import TabMenu from './components/tab/TabMenu.vue'
+import Calendar from '../../components/layouts/calendar.vue'
+import TabMenu from '../../components/tab/TabMenu.vue'
 
 
   export default {
@@ -19,7 +19,7 @@ import TabMenu from './components/tab/TabMenu.vue'
       }
     },
     components: {
-        TabMenu,        
+        TabMenu,
     },
   }
         Calendar

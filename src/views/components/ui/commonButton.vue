@@ -78,11 +78,11 @@
         <div class="container pt-40">
             <h2 class="fs-16 fc-red bold">Round Button</h2>
             <h3>round_fill_button[primary]</h3>
-            <p class="mt-16">기본</p>
+            <p class="mt-16">라운드버튼 - 기본</p>
             <button class="round-button round_fill_button"><i class="ic_plus wh-26 white"></i></button>
 
             <h3>round_line_button[primary]</h3>
-            <p class="mt-16">기본</p>
+            <p class="mt-16">라운드버튼 - 라인</p>
             <button class="round-button round_line_button"><i class="ic_plus wh-26 grey"></i></button>
         </div>
 
