@@ -1,12 +1,14 @@
 <template>
     <div class="common_area">
 
+        <buttons btnSize="" btnShape="" btnColor=""></buttons>
+
         <!-- Enabled, Pressed, Disabled, Loading 4가지의 상태를 가지고 화면 상태에 따라 유기적으로 작용하도록 한다. -->
         <div class="container">
             <h2 class="fs-16 fc-red bold">Large Buttons</h2>
             <h3>large_fill_button[primary]</h3>
             <p class="mt-16">기본</p>
-            <button class="large-button large_fill_button">라지버튼 기본</button>
+            <button class="large-button large_fill_button primary">라지버튼 기본</button>
 
             <p class="mt-16">비활성</p>
             <button class="large-button large_fill_button" disabled>라지버튼 비활성</button>
@@ -21,7 +23,7 @@
             <h2 class="fs-16 fc-red bold">Regular Buttons</h2>
             <h3>regular_fill_button[primary]</h3>
             <p class="mt-16">기본</p>
-            <button class="regular-button regular_fill_button">레귤러버튼 기본</button>
+            <button class="regular-button regular_fill_button primary">레귤러버튼 기본</button>
 
             <p class="mt-16">비활성</p>
             <button class="regular-button regular_fill_button" disabled>레귤러버튼 비활성</button>
@@ -45,7 +47,7 @@
             <h2 class="fs-16 fc-red bold">Small Buttons</h2>
             <h3>small_fill_button[primary]</h3>
             <p class="mt-16">기본</p>
-            <button class="small-button small_fill_button">스몰버튼 기본</button>
+            <button class="small-button small_fill_button primary">스몰버튼 기본</button>
 
             <p class="mt-16">비활성</p>
             <button class="small-button small_fill_button" disabled>스몰버튼 비활성</button>
@@ -91,8 +93,10 @@
 </template>
 
 <script>
+    import Buttons from "./Buttons";
     export default {
         name: 'CommonButton',
+        components: {Buttons},
         data() {
             return {
 

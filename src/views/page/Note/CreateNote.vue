@@ -3,7 +3,9 @@
     <div class="note-wrap">
       <div class="note-box">
         <h2 class="note-title-box"><input type="text" placeholder="Untitled"></h2>
-        <textarea class="note-area" placeholder="Tap here continue..." cols="5"></textarea>
+        <div class="">
+          <textarea class="note-area" placeholder="Tap here continue..." cols="5"></textarea>
+        </div>
       </div>
 
       <ul class="function-box">
@@ -63,7 +65,7 @@
           margin-top: 16px;
           font-size: 13px;
           height: 100%;
-          height: 72vh;
+          height: 65vh;
           resize: none;
         }
       }

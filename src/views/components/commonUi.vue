@@ -12,6 +12,8 @@
 
         <h2><router-link to="/common-button">공통 버튼</router-link></h2>
 
+        <h2><router-link to="/common-tag">공통 태그</router-link></h2>
+
     </div>
 </template>
 

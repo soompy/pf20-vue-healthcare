@@ -83,6 +83,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/components/commonUi.vue')
   },
   {
+    path: '/common-tag',
+    name: 'CommonTag',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/components/ui/commonTag.vue')
+  },
+  {
     path: '/nav',
     name: 'Nav',
     // route level code-splitting
@@ -105,8 +113,15 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/components/ui/commonButton.vue')
+  },
+  {
+    path: '/search-page',
+    name: 'SearchPage',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/page/Search/SearchPage.vue')
   }
-
 ]
 
 const router = new VueRouter({

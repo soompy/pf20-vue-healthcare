@@ -15,6 +15,7 @@
         <router-link to="/notice">Notice</router-link>
         <router-link to="/common-ui">commonUi</router-link>
         <router-link to="/login">Login</router-link>
+        <router-link to="/search-page">Search</router-link>
     </div>
 </template>
 
