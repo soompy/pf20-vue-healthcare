@@ -167,7 +167,7 @@ export default {
       font-family: 'Noto Sans KR', sans-serif;
     }
     &.active {
-      background: #f3df4d;
+      background: #FBC02D;
     }
   }
 </style>

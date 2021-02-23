@@ -36,9 +36,8 @@
     width: 100%;
     font-family: 'Noto Sans KR', sans-serif;
     .nav {
-      /*background: #f3df4d;*/
-      background: #FFFFFF;
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+      background: #F57F17;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
       .logo {
         color: #555;
       }

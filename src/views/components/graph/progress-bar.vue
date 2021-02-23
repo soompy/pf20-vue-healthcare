@@ -24,7 +24,7 @@
         margin: 10px 0;
         box-shadow: 1px 2px 3px #eee;
         .progress-bar {
-            background: #f3df4d;
+            background: #FBC02D;
             left: 0;
             position: absolute;
             top: 0;
