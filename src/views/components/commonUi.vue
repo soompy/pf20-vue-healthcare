@@ -12,8 +12,10 @@
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">공통 텍스트필드</h2>
         <text-field></text-field>
 
+
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">공통 버튼</h2>
         <buttons sizeType="" shapeType="" colorType=""></buttons>
+
 
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">공통 태그</h2>
         <div class="dp-f">

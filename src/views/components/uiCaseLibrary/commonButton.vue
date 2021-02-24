@@ -6,14 +6,14 @@
             <h2 class="fs-16 fc-red bold">Large Buttons</h2>
             <h3>large_fill_button[primary]</h3>
             <p class="mt-16">기본</p>
-            <button class="large-button large_fill_button primary">라지버튼 기본</button>
+            <button class="large fill primary">라지버튼 기본</button>
 
             <p class="mt-16">비활성</p>
-            <button class="large-button large_fill_button" disabled>라지버튼 비활성</button>
+            <button class="large fill" disabled>라지버튼 비활성</button>
 
             <h3>large_fill_button[blue]</h3>
             <p class="mt-16">블루</p>
-            <button class="large-button large_fill_button blue">라지버튼 블루</button>
+            <button class="large fill blue">라지버튼 블루</button>
         </div>
 
 
