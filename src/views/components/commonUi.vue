@@ -14,16 +14,20 @@
 
         <h2><router-link to="/common-tag">공통 태그</router-link></h2>
 
+        <h2 class="pt-50 pb-10 ta-l ph-4p bold">체크박스</h2>
+        <check-box></check-box>
     </div>
 </template>
 
 <script>
     import VisualSwiperDouble from "./swiper/visualSwiperDouble";
     import VisualSwiper from "./swiper/visualSwiper";
+    import CheckBox from "./ui/CheckBox";
 
     export default {
         name: 'CommonUi',
         components: {
+            CheckBox,
             VisualSwiper,
             VisualSwiperDouble
         },

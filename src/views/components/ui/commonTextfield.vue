@@ -76,7 +76,7 @@
                         <label class="field-label" for="field-text">Label</label>
                         <span class="field-line"></span>
                         <div class="field-button-box">
-                            <i class="field-icon ic_check_bold ss-aqua"></i>
+                            <i class="field-icon ic_check_bold aqua"></i>
                         </div>
                     </div>
                 </div>
@@ -246,7 +246,7 @@
                             <label class="field-label" for="field-text">Label</label>
                             <span class="field-line"></span>
                             <div class="field-button-box">
-                                <i class="field-icon ic_check_bold ss-aqua"></i>
+                                <i class="field-icon ic_check_bold aqua"></i>
                             </div>
                         </div>
                     </div>

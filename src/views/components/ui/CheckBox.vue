@@ -3,20 +3,17 @@
         <ul class="checkbox">
             <li class="checkbox-item">
                 <input type="radio" id="f-option" name="selector">
-                <label for="f-option">Pizza</label>
-
+                <label for="f-option">{{ fOption }}</label>
                 <div class="check"></div>
             </li>
             <li class="checkbox-item">
                 <input type="radio" id="s-option" name="selector">
-                <label for="s-option">Bacon</label>
-
+                <label for="s-option">{{ sOption }}</label>
                 <div class="check"><div class="inside"></div></div>
             </li>
             <li class="checkbox-item">
                 <input type="radio" id="t-option" name="selector">
-                <label for="t-option">Cats</label>
-
+                <label for="t-option">{{ tOption }}</label>
                 <div class="check"><div class="inside"></div></div>
             </li>
         </ul>
@@ -32,21 +29,17 @@
             }
         },
         props: {
-            btnText: {
+            fOption: {
                 type: String,
-                default: '버튼 이름',
+                default: '옵션1',
             },
-            btnSize: {
-                tpye: String,
-                default: ''
+            sOption: {
+                type: String,
+                default: '옵션2',
             },
-            btnShape: {
-                tpye: String,
-                default: ''
-            },
-            btnColor: {
-                tpye: String,
-                default: ''
+            tOption: {
+                type: String,
+                default: '옵션3',
             }
         },
         methods: {
@@ -67,6 +60,7 @@
     .checkbox-wrap {
         .checkbox {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             .checkbox-item {

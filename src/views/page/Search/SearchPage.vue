@@ -44,6 +44,9 @@
 </script>
 
 <style lang="scss" scoped>
+    .common_area {
+        padding: 0 4vw;
+    }
     .search-history {
         .blank {
             padding: 40px 0;

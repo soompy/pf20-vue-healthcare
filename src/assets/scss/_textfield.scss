@@ -23,12 +23,12 @@ input[type=text],input[type=search],input[type=password]{
     box-shadow: none;// fireFox 인풋 에러 아웃라인 제거
   }
   &[placeholder]{
-    //color:$color-grey;
+    //color:$colorGrey;
   }
   &[readonly]{
     pointer-events: none;
     &[value]{
-      color:$color-black;
+      color:$colorBlack;
     }
   }
 }
@@ -58,15 +58,14 @@ input[type=text],input[type=search],input[type=password]{
   }
   .field-select-cont{
     $cont-h:40px;
-
     position: absolute;
     top: $img-h + 10px;
     left:0;
     width: 100%;
     max-height: $cont-h * 8;
-    background-color: $color-white;
+    background-color: $colorWhite;
     overflow-y: auto;
-    box-shadow: 0 3px 10px 0 rgba($color-black, 0.07);
+    box-shadow: 0 3px 10px 0 rgba($colorBlack, 0.07);
     z-index: 10;
     .cont-item{
       padding-left: 15px;
@@ -74,13 +73,13 @@ input[type=text],input[type=search],input[type=password]{
       font-size: 15px;
       cursor: pointer;
       &:hover,&.active{
-        background-color: $color-very-light-grey;
+        background-color: $colorVeryLightGrey;
       }
     }
     &.select-top{
       top: auto !important;
       bottom:  $img-h + 9px;
-      box-shadow: 0 -3px 10px 0 rgba($color-black, 0.07);
+      box-shadow: 0 -3px 10px 0 rgba($colorBlack, 0.07);
     }
     .v-scroll-list{ height: 100%;max-height: $cont-h * 8;}
   }
@@ -88,14 +87,14 @@ input[type=text],input[type=search],input[type=password]{
 
 // 1. 텍스트 필트 - 라인
 .form-field-line{
-  $form-label: rgba($color-black,.5);
-  $form-label-focus: $color-black;
-  $form-line: rgba($color-black,.2);
+  $form-label: rgba($colorBlack,.7);
+  $form-label-focus: $colorBlue;
+  $form-line: rgba($colorBlue,.2);
   $form-line-focus: $form-label-focus;
-  $form-input-text: $form-label-focus;
-  $form-field-error: $color-red;
+  $form-input-text: $form-label;
+  $form-field-error: $colorRed;
   $form-label-disabled:$form-line;
-  $form-line-disabled:rgba($color-black,.1);
+  $form-line-disabled:rgba($colorBlack,.1);
   $field-top: 20px;
   $field-bottom: 10px;
   $input-h:30px;
@@ -250,7 +249,7 @@ input[type=text],input[type=search],input[type=password]{
   }
   &.form-disabled{ // 비활성화시 추가
     color:$form-label-disabled;
-    input{background-color: $color-white;}
+    input{background-color: $colorWhite;}
     .field-line{background-color: $form-line-disabled;}
   }
   &.form-select{ // 선택시 추가
@@ -260,7 +259,7 @@ input[type=text],input[type=search],input[type=password]{
     }
   }
   &.form-comfirm{
-    .field-label{color:$color-tealish !important;}
+    .field-label{color:$colorTealish !important;}
   }
 }
 
@@ -275,7 +274,7 @@ input[type=text],input[type=search],input[type=password]{
   width: 100%;height: 60px;
   padding:0 20px 0 30px;
   border-radius: 4px;
-  background-color: $color-white;
+  background-color: $colorWhite;
   text-align: left;
   transition: all 0.3s ease-in-out;
   [class^="ic_"]{
@@ -307,13 +306,13 @@ input[type=text],input[type=search],input[type=password]{
     outline:none;
     &:focus,&:active{
       ~ .field-raise{
-        box-shadow: 0 0 10px 0 rgba($color-black, 0.07);
+        box-shadow: 0 0 10px 0 rgba($colorBlack, 0.07);
       }
     }
   }
   //// 그림자 select-box
   &.select-box{
-    &.active{box-shadow: 0 0 10px 0 rgba($color-black, 0.07);}
+    &.active{box-shadow: 0 0 10px 0 rgba($colorBlack, 0.07);}
     .field-select-cont{top:60px;
       &.select-top{bottom: 60px;}
     }
@@ -334,10 +333,10 @@ input[type=text],input[type=search],input[type=password]{
     }
   }
   &.disabled{
-    background-color: $color-grey-2;
+    background-color: $colorGrey2;
     [disabled]{
-      color: $color-black !important;
-      -webkit-text-fill-color: $color-black !important;
+      color: $colorBlack !important;
+      -webkit-text-fill-color: $colorBlack !important;
       opacity: 0.5;
     }
     .value[disabled]{opacity: 1;}
@@ -347,12 +346,12 @@ input[type=text],input[type=search],input[type=password]{
 
 // 3. 텍스트 필드 -보더
 .form-field-border{
-  background-color: $color-white;
-  border: 1px solid $color-grey-2;
-  &.disabled{ background-color: $color-grey-2;
+  background-color: $colorWhite;
+  border: 1px solid $colorGrey2;
+  &.disabled{ background-color: $colorGrey2;
     [disabled]{
-      color: $color-black !important;
-      -webkit-text-fill-color: $color-black !important;
+      color: $colorBlack !important;
+      -webkit-text-fill-color: $colorBlack !important;
       opacity: 0.5;
     }
     .value[disabled]{opacity: 1;}
@@ -381,7 +380,7 @@ input[type=text],input[type=search],input[type=password]{
     margin-left: 20px;
   }
   &.ico-arrow-down{
-    //@include svg-color($ic_score_down_filled, $color-black);
+    //@include svg-color($ic_score_down_filled, $colorBlack);
   }
   &.ico-close{
     @include bg-img(ic_close_filled);
@@ -430,10 +429,10 @@ input[type=text],input[type=search],input[type=password]{
     align-items: center;
     justify-content: center;
     width: $large-h; height: $large-h;
-    background-color: rgba($color-black,0.1);
+    background-color: rgba($colorBlack,0.1);
     border-radius: 10px;
     &:after{
-      //@include svg-color($ic_upload,rgba($color-black,0.1));
+      //@include svg-color($ic_upload,rgba($colorBlack,0.1));
       content: '';
       display: block;
       width: 60px; height: 60px;
@@ -461,7 +460,7 @@ input[type=text],input[type=search],input[type=password]{
       position: relative;
       width: $input-h; height: $input-h;
       margin-right: 20px;
-      background-color: $color-grey-2;
+      background-color: $colorGrey2;
       border-radius: 4px;
       &.represent{
         &:after{
@@ -472,8 +471,8 @@ input[type=text],input[type=search],input[type=password]{
           position: absolute;
           width: 100%; height: 20px;
           bottom: 0; left: 0;
-          font-size: 13px; color:$color-white;
-          background-color: rgba($color-black,0.8);
+          font-size: 13px; color:$colorWhite;
+          background-color: rgba($colorBlack,0.8);
           border-bottom-right-radius: inherit;
           border-bottom-left-radius: inherit;
         }
@@ -490,9 +489,9 @@ input[type=text],input[type=search],input[type=password]{
       top:- ($button-h / 2);
       right: - ($button-h / 2);
       width: $button-h; height: $button-h;
-      background-color: $color-yellow-orange;
+      background-color: $colorYellowOrange;
       border-radius: 50%;
-      //@include svg-color($ic_close_bold,$color-white);
+      //@include svg-color($ic_close_bold,$colorWhite);
       background-size: 18px;
     }
   }
@@ -534,10 +533,10 @@ input[type=text],input[type=search],input[type=password]{
   width: 30px;
   height: 30px;
   background-size: 20px;
-  border: 1px solid $color-black;
-  //&.minus{ @include svg-color($ic_minus,$color-black);}
-  //&.plus{ @include svg-color($ic_plus,$color-black);}
-  &:hover, &:active{background-color: rgba($color-black,0.05);}
+  border: 1px solid $colorBlack;
+  //&.minus{ @include svg-color($ic_minus,$colorBlack);}
+  //&.plus{ @include svg-color($ic_plus,$colorBlack);}
+  &:hover, &:active{background-color: rgba($colorBlack,0.05);}
   &:disabled, &.disabled{opacity: 0.3;}
 }
 
@@ -551,7 +550,7 @@ input[type=text],input[type=search],input[type=password]{
     +.field-title{
       margin-top: 50px;
       padding-top: 50px;
-      border-top: 1px solid $color-grey-2;
+      border-top: 1px solid $colorGrey2;
     }
   }
 }

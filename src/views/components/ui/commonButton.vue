@@ -69,11 +69,11 @@
             <h2 class="fs-16 mt-16 bold">Small Buttons - text</h2>
             <h3>small_text_button[primary]</h3>
             <p class="mt-16">기본</p>
-            <button class="small-button small_text_button">스몰라인버튼 기본</button>
+            <button class="small-button small_text_button">스몰텍스트버튼 기본</button>
 
             <h3>small_text_button[blue]</h3>
             <p class="mt-16">블루</p>
-            <button class="small-button small_text_button blue">스몰라인버튼 블루</button>
+            <button class="small-button small_text_button blue">스몰텍스트버튼 블루</button>
         </div>
 
 

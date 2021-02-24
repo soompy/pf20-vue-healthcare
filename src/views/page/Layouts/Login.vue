@@ -113,7 +113,7 @@
 
   .form-error-msg {
     font-size: 12px;
-    color: #ff0000;
+    color: #E53935;
   }
 
   /* 체크박스 스타일 */

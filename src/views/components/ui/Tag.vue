@@ -1,5 +1,15 @@
 <template>
-    <span class="list-label bg-black">{{ tagText }}</span>
+    <div class="tag-wrap">
+        <span :class="[tagType, tagColor]">{{ tagText }}</span>
+<!--        <span class="label-outline yellowOrange">Caption</span>-->
+<!--        <span class="label-outline aqua">Caption</span>-->
+<!--        <span class="label-outline red">Caption</span>-->
+<!--        <span class="label-outline green">Caption</span>-->
+<!--        <span class="label-outline midPurple">Caption</span>-->
+
+<!--        lable-   outline / fill / gradient 3종이 있다.-->
+<!--        색은 동일-->
+    </div>
 </template>
 
 <script>
@@ -15,24 +25,18 @@
                 type: String,
                 default: '캡션',
             },
-            btnSize: {
-                tpye: String,
-                default: ''
-            },
-            btnShape: {
-                tpye: String,
-                default: ''
-            },
-            btnColor: {
-                tpye: String,
-                default: ''
-            }
+            // listLabel: {
+            //     type: String,
+            //     default: '',
+            // }
         },
         methods: {
 
         },
         computed: {
-
+            // listLabel() {
+            //     return this.type === 'labelSize' ? 'tag-label' : ''
+            // }
         },
         components: {
 

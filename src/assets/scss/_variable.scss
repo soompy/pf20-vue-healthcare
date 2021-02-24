@@ -13,55 +13,55 @@ $color-ss-gradient-bottom:linear-gradient(to bottom, #34d0ff, #62f2c6) !default;
 
 /********** color variable **********/
 // Primary
-$color-primary: #FBC02D !default;
-$color-blue: #283593 !default;
+$colorPrimary: #FBC02D !default;
+$colorBlue: #1A237E !default;
 
 
 // Secondary
-$color-tealish: #00CBE2 !default;
-$color-aqua-marine: #40C3C4 !default;
-$color-yellow-orange: #FFB300 !default;
-$color-yellow-orange-2: #FFD500 !default;
-$color-bright-yellow: #FFEE00 !default;
-$color-green: #26c68a !default;
-$color-mid-purple: #7b68db !default;
-$color-red: #ff0000 !default;
+$colorTealish: #80CBC4 !default;
+$colorAqua: #40C3C4 !default;
+$colorYellowOrange: #FFB300 !default;
+$colorYellowOrange2: #FFD500 !default;
+$colorBrightYellow: #FFEB3B !default;
+$colorGreen: #26c68a !default;
+$colorMidPurple: #5E35B1 !default;
+$colorRed: #E53935 !default;
 
 // Basic
-$color-dark-grey: #343434 !default;
-$color-metal-grey: #535A63 !default;
-$color-medium-grey: #7F7F7F !default;
-$color-grey: #ABABAB !default;
-$color-grey-2: #CCCCCC !default;
-$color-light-grey: #E9EAEB !default;
-$color-very-light-grey: #F8F8F8 !default;
-$color-white: #FFFFFF !default;
-$color-black: #000000 !default;
-$color-light-sky: #F1FBFC !default;
+$colorDarkGrey: #343434 !default;
+$colorMetalGrey: #535A63 !default;
+$colorMediumGrey: #7F7F7F !default;
+$colorGrey: #ABABAB !default;
+$colorGrey2: #CCCCCC !default;
+$colorLightGrey: #E9EAEB !default;
+$colorVeryLightGrey: #F8F8F8 !default;
+$colorWhite: #FFFFFF !default;
+$colorBlack: #1a1a1a !default;
+$colorLightSky: #F1FBFC !default;
 
 $colors: () !default;
 $colors: map-merge(
   (
-    "primary":       $color-primary,
-    "blue":       $color-blue,
-    "tealish":       $color-tealish,
-    "aqua-marine":        $color-aqua-marine,
-    "light-sky":        $color-light-sky,
-    "yellow-orange":     $color-yellow-orange,
-    "yellow-orange-2":     $color-yellow-orange-2,
-    "bright-yellow":      $color-bright-yellow,
-    "dark-grey":       $color-dark-grey,
-    "metal-grey":       $color-metal-grey,
-    "medium-grey":      $color-medium-grey,
-    "grey":       $color-grey,
-    "grey-2":  $color-grey-2,
-    "light-grey":  $color-light-grey,
-    "very-light-grey":  $color-very-light-grey,
-    "white":  $color-white,
-    "black":  $color-black,
-    "green": $color-green,
-    "mid-purple": $color-mid-purple,
-    "red": $color-red
+    "primary":       $colorPrimary,
+    "blue":       $colorBlue,
+    "tealish":       $colorTealish,
+    "aqua":        $colorAqua,
+    "light-sky":        $colorLightSky,
+    "yellow-orange":     $colorYellowOrange,
+    "yellow-orange-2":     $colorYellowOrange2,
+    "bright-yellow":      $colorBrightYellow,
+    "dark-grey":       $colorDarkGrey,
+    "metal-grey":       $colorMetalGrey,
+    "medium-grey":      $colorMediumGrey,
+    "grey":       $colorGrey,
+    "grey-2":  $colorGrey2,
+    "light-grey":  $colorLightGrey,
+    "very-light-grey":  $colorVeryLightGrey,
+    "white":  $colorWhite,
+    "black":  $colorBlack,
+    "green": $colorGreen,
+    "mid-purple": $colorMidPurple,
+    "red": $colorRed
   ),
   $colors
 );
