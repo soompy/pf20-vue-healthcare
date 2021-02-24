@@ -14,8 +14,16 @@
 
         <h2><router-link to="/common-tag">공통 태그</router-link></h2>
 
+        <h2 class="pt-50 pb-10 ta-l ph-4p bold">공통 태그</h2>
+        <div class="dp-f">
+            <tag shapeType="" colorType="yellowOrange"></tag>
+            <tag shapeType="fill" colorType="yellowOrange"></tag>
+            <tag shapeType="gradient" colorType="yellowOrange"></tag>
+        </div>
+
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">체크박스</h2>
         <check-box></check-box>
+
     </div>
 </template>
 
@@ -23,10 +31,12 @@
     import VisualSwiperDouble from "./swiper/visualSwiperDouble";
     import VisualSwiper from "./swiper/visualSwiper";
     import CheckBox from "./ui/CheckBox";
+    import Tag from "./ui/Tag";
 
     export default {
         name: 'CommonUi',
         components: {
+            Tag,
             CheckBox,
             VisualSwiper,
             VisualSwiperDouble

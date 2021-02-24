@@ -11,6 +11,7 @@
                 <span class="label-outline red">Caption</span>
                 <span class="label-outline green">Caption</span>
                 <span class="label-outline midPurple">Caption</span>
+                <span class="label-outline blue">Caption</span>
             </div>
         </div>
 
@@ -23,6 +24,7 @@
                 <span class="label-fill red">Caption</span>
                 <span class="label-fill green">Caption</span>
                 <span class="label-fill midPurple">Caption</span>
+                <span class="label-fill blue">Caption</span>
             </div>
         </div>
 
@@ -30,12 +32,13 @@
         <div class="container pv-20">
             <p class="pb-10">gradient 기본</p>
             <div class="tag-wrap">
-                <span class="lable-gradient">Caption</span>
-                <span class="lable-gradient yellowOrange">Caption</span>
-                <span class="lable-gradient aqua">Caption</span>
-                <span class="lable-gradient red">Caption</span>
-                <span class="lable-gradient green">Caption</span>
-                <span class="lable-gradient midPurple">Caption</span>
+                <span class="label-gradient">Caption</span>
+                <span class="label-gradient yellowOrange">Caption</span>
+                <span class="label-gradient aqua">Caption</span>
+                <span class="label-gradient red">Caption</span>
+                <span class="label-gradient green">Caption</span>
+                <span class="label-gradient midPurple">Caption</span>
+                <span class="label-gradient blue">Caption</span>
             </div>
         </div>
 
@@ -66,7 +69,7 @@
         overflow-x: auto;
         flex-wrap: nowrap;
         margin: 16px 0 8px;
-        .label-outline, .label-fill, .lable-gradient {
+        .label-outline, .label-fill, .label-gradient {
             display: inline-flex;
             position: relative;
             white-space: nowrap;
@@ -98,6 +101,10 @@
                 border: 1px solid #5E35B1;
                 color: #5E35B1;
             }
+            &.blue {
+                border: 1px solid #1A237E;
+                color: #1A237E;
+            }
         }
 
         .label-fill {
@@ -119,9 +126,12 @@
             &.midPurple {
                 background: #5E35B1;
             }
+            &.blue {
+                background: #1A237E;
+            }
         }
 
-        .lable-gradient {
+        .label-gradient {
             background: linear-gradient(135deg,  #1a1a1a 5%,#eeeeee 56%,#1a1a1a 100%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
             color: #1a1a1a;
@@ -144,6 +154,10 @@
             &.midPurple {
                 background: linear-gradient(135deg,  #5E35B1 5%,#eeeeee 56%,#5E35B1 100%,#cccccc 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5E35B1', endColorstr='#cccccc',GradientType=1 );
+            }
+            &.blue {
+                background: linear-gradient(135deg,  #1A237E 5%,#eeeeee 56%,#1A237E 100%,#cccccc 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A237E', endColorstr='#cccccc',GradientType=1 );
             }
         }
 

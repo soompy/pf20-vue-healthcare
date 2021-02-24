@@ -109,23 +109,24 @@
                 }
                 &:hover {
                     label {
-                        color: #F9A825;
+                        color: #FF8F00;
                     }
                     .check {
-                        border: 2px solid #F9A825;
+                        border: 2px solid #FF8F00;
                     }
                 }
 
                 input[type=radio]:checked ~ .check {
-                    border: 2px solid #F9A825;
+                    border: 2px solid #FF8F00;
                 }
 
                 input[type=radio]:checked ~ .check::before{
-                    background: #F9A825;
+                    background: #FF8F00;
                 }
 
                 input[type=radio]:checked ~ label{
-                    color: #F9A825;
+                    color: #FF8F00;
+                    text-shadow: 1px 1px 1px #ff8f00;
                 }
             }
         }
