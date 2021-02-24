@@ -88,7 +88,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/components/ui/commonTag.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/components/uiCaseLibrary/commonTag.vue')
   },
   {
     path: '/nav',
@@ -104,7 +104,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/components/ui/commonTextfield.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/components/uiCaseLibrary/commonTextfield.vue')
   },
   {
     path: '/common-button',
@@ -112,7 +112,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/components/ui/commonButton.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/components/uiCaseLibrary/commonButton.vue')
   },
   {
     path: '/search-page',

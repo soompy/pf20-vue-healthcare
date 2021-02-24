@@ -38,7 +38,6 @@
             CheckBox,
             Tag,
             TextField
-
         }
     }
 </script>
