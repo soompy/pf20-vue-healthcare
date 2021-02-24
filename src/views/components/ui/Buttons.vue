@@ -63,19 +63,18 @@
 </script>
 
 <style lang="scss" scoped>
-    //큰 버튼
     .basics {
-        font-size: 15px;
-        width: 100%;
-        height: 56px;
         &.fill {
-            .primary {background: #FBC02D;}
-            .grey {background: #ABABAB;color: #fff;text-shadow: 1px 1px 5px #1a1a1a;}
-            .blue {background: #1A237E;color: #fff;}
-        }
+            &.primary {background: #FBC02D;}
+            &.grey {background: #ABABAB;color: #fff;text-shadow: 1px 1px 5px #1a1a1a;}
+            &.blue {background: #1A237E;color: #fff;}
+            &:disabled {background: #ddd;}
+        }    
         &.outline {
-            .grey {background: #ffffff;color: #dddddd;border: 1px solid #ccc;}
-            .blue {color: #1A237E;border : 1px solid #1A237E;}
+            background: #ffffff;
+            &.primary {color: #FBC02D;border : 1px solid #FBC02D;}
+            &.blue {color: #1A237E;border : 1px solid #1A237E;}
+            &:disabled {background: #dddddd;border: 1px solid #e0e0e0;}            
         }
         &.large {
             width: 100%;
@@ -104,5 +103,4 @@
             color: #ccc;
         }
     }
-
 </style>
