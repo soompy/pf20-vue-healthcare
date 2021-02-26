@@ -8,24 +8,38 @@
 
           <div class="task-box">
               <div class="task-title-wrap">
-                  <label class="task-title-box" for="task">
+                  <label class="task-title-box" for="task0">
                       <p class="task-infomation"><strong>기상</strong> <span class="time">09:00</span></p>
-                      <input type="checkbox" class="chkBtn" id="task">
+                      <input type="checkbox" class="chkBtn" id="task0">
                   </label>
               </div>
 
               <div class="task-list-wrap">
                   <div class="task-title-wrap">
-                      <label class="task-title-box" for="task">
+                      <label class="task-title-box" for="task1">
                           <p class="task-infomation"><strong>기상</strong> <span class="time">09:00</span></p>
-                          <input type="checkbox" class="chkBtn" id="task">
+                          <input type="checkbox" class="chkBtn" id="task1">
                       </label>
                   </div>
 
                   <ul class="task-list-box">
                       <li class="task-list">
-                          <p>양치</p>
-                          <input type="checkbox" class="smallchkBtn" id="task">
+                          <label class="detail-task" for="detailtask0">
+                              <p>양치</p>
+                              <input type="checkbox" class="smallchkBtn" id="detailtask0">
+                          </label>
+                      </li>
+                      <li class="task-list">
+                          <label class="detail-task" for="detailtask1">
+                              <p>양치</p>
+                              <input type="checkbox" class="smallchkBtn" id="detailtask1">
+                          </label>
+                      </li>
+                      <li class="task-list">
+                          <label class="detail-task" for="detailtask2">
+                              <p>양치</p>
+                              <input type="checkbox" class="smallchkBtn" id="detailtask2">
+                          </label>
                       </li>
                   </ul>
               </div>
@@ -105,7 +119,19 @@
                 margin-bottom: 12px;
                 .task-list-box {
                     .task-list {
-
+                        border-radius: 8px;
+                        padding: 4px 8px;
+                        background: #FFFFFF;
+                        margin-bottom: 8px;
+                        border: 1px solid #dddddd;
+                        .detail-task {
+                            display: flex;
+                            align-items: center;
+                            p {font-size: 13px;}
+                            .smallchkBtn {
+                                margin-left: auto;
+                            }
+                        }
                     }
                 }
             }
