@@ -138,7 +138,7 @@ export default {
   props: {
     slideWidth: {
       type: Number || String,
-      default: 8
+      default: 12
     }
   },
   computed: {
@@ -157,17 +157,26 @@ export default {
 
   .list-item {
     border-radius: 6px;
-    padding: 4px;
+    padding: 8px 0;
     .day {
+      display: inline-block;
+      width: 100%;
       font-size: 12px;
+      padding-bottom: 4px;
+      margin-bottom: 4px;
+      border-bottom: 1px solid #ccc;
     }
     .date {
       font-size: 14px;
       font-weight: 600;
       font-family: 'Noto Sans KR', sans-serif;
+      padding-top: 2px;
     }
     &.active {
       background: #FBC02D;
+      .day {
+        border-bottom: 1px solid #FFFFFF;
+      }
     }
   }
 </style>

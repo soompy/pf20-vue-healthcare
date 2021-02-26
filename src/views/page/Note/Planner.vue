@@ -1,14 +1,17 @@
 <template>
   <div class="common_area">
-    <calendar class="mt-20"></calendar>
-    <tab-menu></tab-menu>
+<!--    달력ui-->
+<!--    <calendar class="mt-20"></calendar>-->
+<!--    달력ui-->
+      <mini-calendar></mini-calendar>
+      <task-box></task-box>
 
   </div>
 </template>
 
 <script>
-import Calendar from '../../components/layouts/calendar.vue'
-import TabMenu from '../../components/tab/TabMenu.vue'
+import MiniCalendar from "../../components/layouts/miniCalendar";
+import TaskBox from "../../components/note/TaskBox";
 
 
   export default {
@@ -19,10 +22,10 @@ import TabMenu from '../../components/tab/TabMenu.vue'
       }
     },
     components: {
-        TabMenu,
+        TaskBox,
+      MiniCalendar,
     },
   }
-        Calendar
 </script>
 
 <style lang="scss" scoped>

@@ -58,3 +58,23 @@
 .slide-list-item {position:relative; display: inline-block; margin-right: 10px; }
 
 
+// checkbox
+input[type=checkbox] {
+  &.chkBtn {
+    border-radius: 50%;
+    background-color: $colorGrey2 !important;
+    &:checked {
+      background-image: url();
+      background-color: $colorPrimary !important;
+    }
+  }
+  &.smallchkBtn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $colorGrey2;
+    &:checked {
+      background-color: $colorPrimary !important;
+    }
+  }
+}
