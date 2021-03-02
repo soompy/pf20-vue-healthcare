@@ -1,10 +1,12 @@
 <template>
   <div class="common_area">
-
+    <notice-list></notice-list>
   </div>
 </template>
 
 <script>
+
+  import NoticeList from "../../components/layouts/noticeList";
 
   export default {
     name: 'Notice',
@@ -14,6 +16,7 @@
       }
     },
     components: {
+      NoticeList
 
     }
   }

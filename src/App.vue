@@ -4,7 +4,7 @@
       <router-link to="/nav"><span class="hamburger-menu"><i class="ic_list_normal wh-30 dark-grey"></i></span></router-link>
       <router-link to="/"><h1 class="logo"><i class="ic_level_filled wh-30 medium-grey mr-06"></i>Heal Card</h1></router-link>
       <!-- vue router  https://router.vuejs.org/kr/guide/#javascript -->
-      <router-link to="/"><h1 class="logo"><i class="ic_more_2 wh-30 ss-blue mr-06"></i></h1></router-link>
+      <router-link to="/mypage" class="mypage"><h1 class="logo"><i class="ic_more_2 wh-30 ss-blue mr-06"></i></h1></router-link>
     </div>
     <router-view/>
   </div>
@@ -45,6 +45,9 @@
     a {
       display: block;
       padding: 10px;
+      &.mypage {
+        margin-left: auto;
+      }
     }
   }
 </style>

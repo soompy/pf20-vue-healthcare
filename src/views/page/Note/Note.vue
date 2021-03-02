@@ -4,7 +4,7 @@
 
 <!--    더하기 버튼 클릭시-->
 <!--    노트 타입선택 > 시간설정 > 노트 입력페이지(제목, 이모티콘) > 저장 후 노트 등록완료-->
-    <round-button fillType="line"></round-button>
+    <round-button fillType="line" @clickPage="addNote"></round-button>
 
     <NoteList/>
 
@@ -15,8 +15,9 @@
 
 <script>
 import TabMenu from '../../components/tab/TabMenu.vue'
-import NoteList from "../../components/note/noteList";
-import RoundButton from "../../components/ui/RoundButton";
+import NoteList from '../../components/note/noteList'
+import RoundButton from '../../components/ui/RoundButton'
+// import Icon from '../../constants/icon'
 
   export default {
     name: 'Note',
@@ -26,7 +27,8 @@ import RoundButton from "../../components/ui/RoundButton";
             {no: 0, name: '모든 노트'},
             {no: 1, name: '폴더'}
         ],
-        curTab: 0
+        curTab: 0,
+        // icon: Icon,
       }
     },
     props: {
@@ -44,8 +46,9 @@ import RoundButton from "../../components/ui/RoundButton";
       },
 
       addNote () {
-        this.$router.push({ path: 'create-note' })
-      }
+        this.$router.push({ path: '../create-note' })
+      },
+
     }
   }
 </script>

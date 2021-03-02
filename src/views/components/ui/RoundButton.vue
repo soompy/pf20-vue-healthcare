@@ -1,10 +1,12 @@
 <template>
     <button :class="[fillClass]" class="basics round">
         <i class="ic_plus wh-26 white"></i>
+<!--        <i :class="iconClass"><slot></slot></i>-->
     </button>
 </template>
 
 <script>
+    // import Icon from '../../constants/icon'
 
     export default {
         name: 'RoundButton',
@@ -14,7 +16,6 @@
                     fill: 'round-fill',
                     line: 'round-line'
                 }
-
             }
         },
         props: {
@@ -22,12 +23,20 @@
                 type: String,
                 default: 'fill'
             },
+            iconClass: {
+                type: String,
+                default: ''
+            },
         },
         computed: {
             fillClass() {
                 return this.fillTypeObj[this.fillType]
             }
-        }
+        },
+        // created() {
+        //     console.log('created::', Object.keys(Color), this.icon)
+        //     this.colorObj = Object.keys(Color)
+        // },
     }
 </script>
 
