@@ -43,6 +43,20 @@
                       </li>
                   </ul>
               </div>
+
+              <div class="task-title-wrap finish-task">
+                  <label class="task-title-box" for="task0">
+                      <p class="task-infomation"><strong>기상</strong> <span class="time">09:00</span></p>
+                      <input type="checkbox" class="chkBtn" id="task0" disabled>
+                  </label>
+              </div>
+
+              <div class="task-title-wrap">
+                  <label class="task-title-box" for="task0">
+                      <p class="task-infomation"><strong>기상</strong> <span class="time">09:00</span></p>
+                      <input type="checkbox" class="chkBtn" id="task0">
+                  </label>
+              </div>
           </div>
       </div>
   </div>
@@ -69,6 +83,8 @@
     .task-wrap {
         display: flex;
         justify-content: flex-start;
+        background: #fef8ea;
+        padding: 20px 0;
         .daily {
             display: flex;
             flex-direction: column;
@@ -78,17 +94,14 @@
             strong {
                 font-size: 18px;
             }
-            span {
-
-            }
         }
         .task-box {
             width: 100%;
             margin-right: 4vw;
+            color: #333333;
             .task-title-wrap {
-                border: 1px solid #dddddd;
                 border-radius: 12px;
-                padding: 8px 12px;
+                padding: 8px 6px 8px 12px;
                 background: #FFFFFF;
                 margin-bottom: 12px;
                 .task-title-box {
@@ -110,20 +123,26 @@
                 .time {
                     display: block;
                 }
+                &.finish-task {
+                    background: #F8F8F8;
+                    color: #999999;
+                }
             }
             .task-list-wrap {
-                border: 1px solid #dddddd;
-                background: #eeeeee;
+                background: #FFFFFF;
                 border-radius: 12px;
                 padding: 8px;
                 margin-bottom: 12px;
+                .task-title-wrap {
+                    padding: 0;
+                    padding-left: 4px;
+                }
                 .task-list-box {
                     .task-list {
                         border-radius: 8px;
-                        padding: 4px 8px;
+                        padding: 4px;
                         background: #FFFFFF;
                         margin-bottom: 8px;
-                        border: 1px solid #dddddd;
                         .detail-task {
                             display: flex;
                             align-items: center;
@@ -136,6 +155,5 @@
                 }
             }
         }
-
     }
 </style>

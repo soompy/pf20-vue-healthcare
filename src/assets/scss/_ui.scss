@@ -4,7 +4,7 @@
 //swiper slide banner
 .flex-list-scrollX-wrap {
   overflow-x: scroll;
-  padding-left: 4vw;
+  padding: 12px 0 12px 4vw;
   .flex-list-scrollX-con {
     display: flex;
     flex-wrap: wrap;
@@ -62,10 +62,21 @@
 input[type=checkbox] {
   &.chkBtn {
     border-radius: 50%;
-    background-color: $colorGrey2 !important;
+    border: 2px solid $colorGrey2;
     &:checked {
-      background-image: url();
-      background-color: $colorPrimary !important;
+      background-color: $colorYellowOrange !important;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='check' class='svg-inline--fa fa-check fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='currentColor' d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z'%3e%3c/path%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 54%;
+      border: none;
+    }
+    &:disabled {
+      background: $colorLightGrey !important;
+      border: none;
+      &:before {
+        display: none;
+      }
     }
   }
   &.smallchkBtn {
@@ -75,6 +86,17 @@ input[type=checkbox] {
     border: 2px solid $colorGrey2;
     &:checked {
       background-color: $colorPrimary !important;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='check' class='svg-inline--fa fa-check fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='currentColor' d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z'%3e%3c/path%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 54%;
+      border: none;
+    }
+    &:disabled {
+      background: $colorLightGrey !important;
+      &:before {
+        display: none;
+      }
     }
   }
 }
