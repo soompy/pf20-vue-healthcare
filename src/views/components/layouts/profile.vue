@@ -1,12 +1,9 @@
 <template>
     <div class="cp_common_area">
-
-
         <div class="profile-box">
             <p class="profile-title"><span class="under-line"><span class="bold">Hi Suri</span></span></p>
             <strong class="profile-subtitle">운동을 시작하세요!</strong>
         </div>
-
     </div>
 </template>
 

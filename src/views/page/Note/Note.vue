@@ -4,16 +4,19 @@
 
 <!--    더하기 버튼 클릭시-->
 <!--    노트 타입선택 > 시간설정 > 노트 입력페이지(제목, 이모티콘) > 저장 후 노트 등록완료-->
+    <round-button fillType="line"></round-button>
 
     <NoteList/>
 
-    <button class="round-button round_line_button" @click="addNote"><i class="ic_plus wh-26 grey"></i></button>
+<!--    <button class="round-button round_line_button" @click="addNote"><i class="ic_plus wh-26 grey"></i></button>-->
+
   </div>
 </template>
 
 <script>
 import TabMenu from '../../components/tab/TabMenu.vue'
 import NoteList from "../../components/note/noteList";
+import RoundButton from "../../components/ui/RoundButton";
 
   export default {
     name: 'Note',
@@ -30,6 +33,7 @@ import NoteList from "../../components/note/noteList";
 
     },
     components: {
+        RoundButton,
         NoteList,
         TabMenu
     },
