@@ -1,12 +1,16 @@
 <template>
-    <button :class="[fillClass]" class="basics round">
-        <i class="ic_plus wh-26 white"></i>
-<!--        <i :class="iconClass"><slot></slot></i>-->
+    <button :class="[fillClass]" class="basics round" @click="click">
+        <!-- <i class="ic_plus wh-26"></i> -->
+       <i :class="[iconType[icon], svgColor]"><slot></slot></i>
     </button>
 </template>
 
 <script>
-    // import Icon from '../../constants/icon'
+    import Icon from '@/constants/icon'    
+
+    console.log(Icon);
+    
+    // 2021.03.02 버튼테마만들기(모양 > 색상 세트)
 
     export default {
         name: 'RoundButton',
@@ -15,7 +19,8 @@
                 fillTypeObj: {
                     fill: 'round-fill',
                     line: 'round-line'
-                }
+                },
+                iconType: Icon
             }
         },
         props: {
@@ -23,20 +28,26 @@
                 type: String,
                 default: 'fill'
             },
-            iconClass: {
+            svgColor: {
                 type: String,
-                default: ''
+                default: 'white'
+            },
+            icon: {
+                type: String,
+                default: 'plus'
             },
         },
         computed: {
             fillClass() {
                 return this.fillTypeObj[this.fillType]
+            },
+        },  
+        methods: {
+            click() {
+                // console.log('click')
+                this.$emit('clickBtn')
             }
-        },
-        // created() {
-        //     console.log('created::', Object.keys(Color), this.icon)
-        //     this.colorObj = Object.keys(Color)
-        // },
+        }    
     }
 </script>
 
@@ -53,6 +64,10 @@
             box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
             &.round-fill {background: #1A237E;}
             &.round-line {border: 1px solid #ccc;background: #FFFFFF;}
+            i {
+                width: 70%;
+                height: 70%;
+            }
         }
     }
 </style>
