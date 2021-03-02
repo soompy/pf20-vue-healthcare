@@ -1,7 +1,5 @@
 <template>
-    <div class="tag-wrap">
-        <span :class="[tagTypeClass, tagColorClass]">{{ tagText }}</span>
-    </div>
+    <span :class="[tagTypeClass, tagColorClass]">{{ tagText }}</span>
 </template>
 
 <script>

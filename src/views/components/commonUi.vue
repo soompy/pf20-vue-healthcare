@@ -18,7 +18,7 @@
 
 
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">공통 태그</h2>
-        <div class="dp-f">
+        <div class="tag-wrap">
             <tag shapeType="" colorType="yellowOrange"></tag>
             <tag shapeType="fill" colorType="yellowOrange"></tag>
             <tag shapeType="gradient" colorType="yellowOrange"></tag>

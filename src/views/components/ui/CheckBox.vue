@@ -126,7 +126,6 @@
 
                 input[type=radio]:checked ~ label{
                     color: #FF8F00;
-                    text-shadow: 1px 1px 1px #ff8f00;
                 }
             }
         }

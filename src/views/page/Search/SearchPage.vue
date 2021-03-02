@@ -1,23 +1,19 @@
 <template>
     <div class="common_area">
         <text-field></text-field>
-        <div class="search-history">
-            <!-- 최근 검색어가 없는 경우 -->
-            <p class="blank">최근 검색어가 없습니다.</p>
 
-            <!-- 최근 검색어가 있는 경우 -->
+        <key-word-box></key-word-box>
 
-            <!-- 검색어 기능 끄고 켜기  >  small line 버튼 사용 -->
-
-        </div>
-
-        <div class="popular-keyword">
-            <tag></tag>
+        <div class="tag-wrap">
+            <tag tag-text="혈압기" color-type="red"></tag>
+            <tag tag-text="운동" color-type="green"></tag>
+            <tag tag-text="건강기능식품" color-type="midPurple"></tag>
+            <tag tag-text="필라테스" color-type="yellowOrange"></tag>
+            <tag tag-text="비타민워터" color-type="blue"></tag>
+            <tag tag-text="혈당체크방법" color-type="aqua"></tag>
         </div>
 
         <check-box></check-box>
-
-
 
     </div>
 </template>
@@ -26,6 +22,7 @@
     import TextField from "../../components/ui/TextField";
     import Tag from "../../components/ui/Tag";
     import CheckBox from "../../components/ui/CheckBox";
+    import KeyWordBox from "../../components/ui/KeywordBox";
 
     export default {
         name: 'SearchPage',
@@ -34,7 +31,14 @@
 
             }
         },
+        props: {
+            fOption: {
+                type: String,
+                default: 's',
+            }
+        },
         components: {
+            KeyWordBox,
             CheckBox,
             Tag,
             TextField
@@ -45,10 +49,5 @@
 <style lang="scss" scoped>
     .common_area {
         padding: 0 4vw;
-    }
-    .search-history {
-        .blank {
-            padding: 40px 0;
-        }
     }
 </style>

@@ -100,3 +100,13 @@ input[type=checkbox] {
     }
   }
 }
+
+// tag
+.tag-wrap {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin: 16px 0 8px;
+  &::-webkit-scrollbar {display: none;}
+}

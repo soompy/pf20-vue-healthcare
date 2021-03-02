@@ -38,7 +38,6 @@
     .button-round {
         border-radius: 50%;
         padding: 2px;
-        background: #FBC02D;
         margin-left: 10px;
     }
 </style>
