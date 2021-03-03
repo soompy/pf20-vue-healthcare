@@ -15,11 +15,6 @@
     <mini-calendar></mini-calendar>
 
     <square-list></square-list>
-
-
-
-    <!-- 투데이 미션 -->
-
   </div>
 </template>
 
@@ -46,7 +41,7 @@ export default {
 <style lang="scss" scoped>
   .visual {
         width: 100%;
-        padding: 5vw 4vw;
+        padding: 20px 4vw;
         .nickname-info {
           text-align: left;
           font-size: 14px;

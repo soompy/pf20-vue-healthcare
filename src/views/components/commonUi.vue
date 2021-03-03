@@ -14,7 +14,13 @@
 
 
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">공통 버튼</h2>
-        <buttons sizeType="" shapeType="" colorType=""></buttons>
+        <buttons sizeType="small" shapeType="line" colorType="primary"></buttons>
+        <buttons sizeType="small" shapeType="line" colorType="blue"></buttons>
+        <buttons sizeType="small" shapeType="line" colorType="grey"></buttons>
+
+        <buttons sizeType="small" shapeType="fill" colorType="primary"></buttons>
+        <buttons sizeType="small" shapeType="fill" colorType="blue"></buttons>
+        <buttons sizeType="small" shapeType="fill" colorType="grey"></buttons>
 
 
         <h2 class="pt-50 pb-10 ta-l ph-4p bold">공통 태그</h2>

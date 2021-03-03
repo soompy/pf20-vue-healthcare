@@ -20,6 +20,11 @@ import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
 import Calendar from 'v-calendar/lib/components/calendar.umd'
 import DatePicker from 'v-calendar/lib/components/date-picker.umd'
 
+// vue-ellipse-progress
+import VueEllipseProgress from 'vue-ellipse-progress';
+Vue.use(VueEllipseProgress);
+
+
 // vue awesome swiper
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 

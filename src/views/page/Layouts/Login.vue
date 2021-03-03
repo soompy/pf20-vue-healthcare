@@ -29,32 +29,38 @@
             <li><button><span class="sns-icon twitter"></span>트위터</button></li>
             <li><button><span class="sns-icon instagram"></span>인스타그램</button></li>
         </ul>
-        <button class="large-button large_fill_button">{{ loginBtn }}</button>
+
+        <buttons sizeType="large" shapeType="fill" colorType="primary">{{ loginBtn }}</buttons>
     </div>
   </div>
 </template>
 
 <script>
 
+  import Buttons from "../../components/ui/Buttons";
   export default {
     name: 'Login',
     data() {
       return {
         label: 'Sign in',
         labelPw: 'Password',
-        loginBtn: 'Go!'
       }
     },
     props: {
-
+        loginBtn: {
+            type: String,
+            default: 'Login',
+        },
     },
     components: {
+        Buttons
 
     }
   }
 </script>
 
 <style lang="scss" scoped>
+  .common_area {height: calc(100vh - 60px);}
   .signin-title {
     font-size: 22px;
     font-weight: bold;
@@ -63,7 +69,7 @@
   }
   .signin-subtitle {
     text-align: left;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   .common_area {
     display: flex;
@@ -155,5 +161,4 @@
           font-size: 13px;
       }
   }
-
 </style>
