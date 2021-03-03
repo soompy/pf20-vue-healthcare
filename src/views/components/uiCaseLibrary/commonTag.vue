@@ -100,8 +100,8 @@
                 color: #5E35B1;
             }
             &.blue {
-                border: 1px solid #1A237E;
-                color: #1A237E;
+                border: 1px solid #3f51b5;
+                color: #3f51b5;
             }
         }
 
@@ -125,7 +125,7 @@
                 background: #5E35B1;
             }
             &.blue {
-                background: #1A237E;
+                background: #3f51b5;
             }
         }
 
@@ -154,8 +154,8 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5E35B1', endColorstr='#cccccc',GradientType=1 );
             }
             &.blue {
-                background: linear-gradient(135deg,  #1A237E 5%,#eeeeee 56%,#1A237E 100%,#cccccc 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A237E', endColorstr='#cccccc',GradientType=1 );
+                background: linear-gradient(135deg,  #3f51b5 5%,#eeeeee 56%,#3f51b5 100%,#cccccc 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f51b5', endColorstr='#cccccc',GradientType=1 );
             }
         }
 

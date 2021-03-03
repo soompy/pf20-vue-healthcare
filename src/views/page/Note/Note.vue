@@ -7,7 +7,6 @@
     <round-button fillType="line" svgColor="grey" @clickBtn="addNote" :style="`position: fixed;right: 4vw;top: 70px;z-index: 5;`"></round-button>
 
     <NoteList/>  
-
   </div>
 </template>
 

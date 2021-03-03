@@ -173,7 +173,7 @@ export default {
       padding-top: 2px;
     }
     &.active {
-      background: #FBC02D;
+      background: #dddddd;
       .day {
         border-bottom: 1px solid #FFFFFF;
       }

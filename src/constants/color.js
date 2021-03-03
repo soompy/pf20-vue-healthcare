@@ -1,7 +1,7 @@
 export default Object.freeze({
 // Primary
     primary: '#FBC02D',
-    blue: '#1A237E',
+    blue: '#3f51b5',
 // Secondary
     tealish:'#80CBC4',
     aqua: '#00CBE2',

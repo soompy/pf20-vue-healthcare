@@ -1,44 +1,23 @@
 <template>
     <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide class="">
-            <div class="box-shadow2 mt-20 mb-36 ta-l pa-16">
-                <strong class="dp-b">Personal</strong>
-                <span class="dp-b fc-grey"> task</span>
+            <div class="personal-card-list">
+                <strong class="dp-b">상체</strong>
+                <span class="dp-b fc-grey">푸쉬업 목표치</span>
                 <progress-bar></progress-bar>
             </div>
         </swiper-slide>
         <swiper-slide class="">
-            <div class="box-shadow2 mt-20 mb-36 ta-l pa-16">
-                <strong class="dp-b">Personal</strong>
-                <span class="dp-b fc-grey"> task</span>
+            <div class="personal-card-list">
+                <strong class="dp-b">코어</strong>
+                <span class="dp-b fc-grey">윗몸일으키기 목표치</span>
                 <progress-bar></progress-bar>
             </div>
         </swiper-slide>
         <swiper-slide class="">
-            <div class="box-shadow2 mt-20 mb-36 ta-l pa-16">
-                <strong class="dp-b">Personal</strong>
-                <span class="dp-b fc-grey"> task</span>
-                <progress-bar></progress-bar>
-            </div>
-        </swiper-slide>
-        <swiper-slide class="">
-            <div class="box-shadow2 mt-20 mb-36 ta-l pa-16">
-                <strong class="dp-b">Personal</strong>
-                <span class="dp-b fc-grey"> task</span>
-                <progress-bar></progress-bar>
-            </div>
-        </swiper-slide>
-        <swiper-slide class="">
-            <div class="box-shadow2 mt-20 mb-36 ta-l pa-16">
-                <strong class="dp-b">Personal</strong>
-                <span class="dp-b fc-grey"> task</span>
-                <progress-bar></progress-bar>
-            </div>
-        </swiper-slide>
-        <swiper-slide class="">
-            <div class="box-shadow2 mt-20 mb-36 ta-l pa-16">
-                <strong class="dp-b">Personal</strong>
-                <span class="dp-b fc-grey"> task</span>
+            <div class="personal-card-list">
+                <strong class="dp-b">하체</strong>
+                <span class="dp-b fc-grey">스쿼드 목표치</span>
                 <progress-bar></progress-bar>
             </div>
         </swiper-slide>
@@ -97,3 +76,12 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+    .personal-card-list {
+        text-align: left;
+        margin-top: 20px;
+        padding: 16px;
+        border: 1px solid #dddddd;
+    }
+</style>

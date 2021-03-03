@@ -1,5 +1,5 @@
 <template>
-    <button :class="[sizeClass, shapeClass]">
+    <button :class="[sizeClass, shapeClass, colorClass]" class="basics">
         <!--
             첫 번째로 버튼 크기 클래스 large-button, regular-button, small-button
 
@@ -24,7 +24,7 @@
         props: {
             btnText: {
                 type: String,
-                default: '버튼 이름',
+                default: '버튼',
             },
             sizeType: {
                 tpye: String,
@@ -44,17 +44,18 @@
         },
         computed: {
             sizeClass() {
-                return this.sizeArr.includes(this.sizeType) ? `${this.sizeType}-button` : 'small-button'
+                return this.sizeArr.includes(this.sizeType) ? `${this.sizeType}` : 'small'
             },
             shapeClass () {
-              if (this.shapeType === 'fill') return 'regular_fill_button'
-              if (this.shapeType === 'line') return 'regular_line_button'
+              if (this.shapeType === 'fill') return 'fill'
+              if (this.shapeType === 'line') return 'outline'
               return 'regular_fill_button'
             },
-
-            // colorClass() {
-            //     return this.
-            // },
+            colorClass() {
+                if (this.colorType === 'primary') return 'primary'
+                if (this.colorType === 'grey') return 'grey'
+                return 'blue'
+            },
         },
         components: {
 
@@ -67,14 +68,14 @@
         &.fill {
             &.primary {background: #FBC02D;}
             &.grey {background: #ABABAB;color: #fff;text-shadow: 1px 1px 5px #1a1a1a;}
-            &.blue {background: #1A237E;color: #fff;}
+            &.blue {background: #3f51b5;color: #fff;}
             &:disabled {background: #ddd;}
-        }    
+        }
         &.outline {
             background: #ffffff;
             &.primary {color: #FBC02D;border : 1px solid #FBC02D;}
-            &.blue {color: #1A237E;border : 1px solid #1A237E;}
-            &:disabled {background: #dddddd;border: 1px solid #e0e0e0;}            
+            &.blue {color: #3f51b5;border : 1px solid #3f51b5;}
+            &:disabled {background: #dddddd;border: 1px solid #e0e0e0;}
         }
         &.large {
             width: 100%;
@@ -94,7 +95,7 @@
             height: 40px;
             border-radius: 50%;
             box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
-            &.round-fill {background: #1A237E;}
+            &.round-fill {background: #3f51b5;}
             &.round-line {border: 1px solid #ccc;background: #FFFFFF;}
         }
 
