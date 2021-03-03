@@ -47,7 +47,7 @@
                 justify-content: center;
                 width: 24px;
                 height: 24px;
-                background: #1A237E;
+                background: #3f51b5;
                 border-radius: 50%;
                 margin-right: 8px;
             }

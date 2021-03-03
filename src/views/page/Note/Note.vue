@@ -4,12 +4,9 @@
 
 <!--    더하기 버튼 클릭시-->
 <!--    노트 타입선택 > 시간설정 > 노트 입력페이지(제목, 이모티콘) > 저장 후 노트 등록완료-->
-    <round-button fillType="fill" @clickBtn="addNote"></round-button>
+    <round-button fillType="fill" @clickBtn="addNote" :style="`position: fixed;right: 4vw;top: 76px;z-index: 5;`"></round-button>
 
     <NoteList/>
-
-   <button class="round-button round_line_button" @click="addNote"><i class="ic_plus wh-26 grey"></i></button>
-
   </div>
 </template>
 

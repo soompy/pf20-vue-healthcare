@@ -6,10 +6,10 @@
 </template>
 
 <script>
-    import Icon from '@/constants/icon'    
+    import Icon from '@/constants/icon'
 
     console.log(Icon);
-    
+
     // 2021.03.02 버튼테마만들기(모양 > 색상 세트)
 
     export default {
@@ -41,13 +41,13 @@
             fillClass() {
                 return this.fillTypeObj[this.fillType]
             },
-        },  
+        },
         methods: {
             click() {
                 // console.log('click')
                 this.$emit('clickBtn')
             }
-        }    
+        }
     }
 </script>
 
@@ -62,7 +62,7 @@
             height: 40px;
             border-radius: 50%;
             box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
-            &.round-fill {background: #1A237E;}
+            &.round-fill {background: #3f51b5;}
             &.round-line {border: 1px solid #ccc;background: #FFFFFF;}
             i {
                 width: 70%;
