@@ -104,4 +104,24 @@
             color: #ccc;
         }
     }
+
+    // button (추후활용예정)
+/*
+    @mixin button-variant(
+        $background,
+        $border,
+        $color: color-contrast($background)
+    ) {
+        color: $color;
+        border-color: $border;
+
+    }
+
+    @mixin button-outline-variant(
+        $color
+    ) {
+        color: $color;
+        border-color: $color;
+    }
+*/
 </style>
