@@ -88,8 +88,8 @@
             padding: 10px;
             .list-item-title {
                 margin-bottom: 10px;
+                text-align: left;
                 .detail-item-info {
-                    text-align: left;
                     h3 {
                         font-weight: bold;
                     }

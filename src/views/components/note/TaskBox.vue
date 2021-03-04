@@ -57,6 +57,36 @@
                       <input type="checkbox" class="chkBtn" id="task0">
                   </label>
               </div>
+
+              <div class="task-list-wrap">
+                  <div class="task-title-wrap">
+                      <label class="task-title-box" for="task1">
+                          <p class="task-infomation"><strong>기상</strong> <span class="time">09:00</span></p>
+                          <input type="checkbox" class="chkBtn" id="task1">
+                      </label>
+                  </div>
+
+                  <ul class="task-list-box">
+                      <li class="task-list">
+                          <label class="detail-task" for="detailtask0">
+                              <p>양치</p>
+                              <input type="checkbox" class="smallchkBtn" id="detailtask0">
+                          </label>
+                      </li>
+                      <li class="task-list">
+                          <label class="detail-task" for="detailtask1">
+                              <p>양치</p>
+                              <input type="checkbox" class="smallchkBtn" id="detailtask1">
+                          </label>
+                      </li>
+                      <li class="task-list">
+                          <label class="detail-task" for="detailtask2">
+                              <p>양치</p>
+                              <input type="checkbox" class="smallchkBtn" id="detailtask2">
+                          </label>
+                      </li>
+                  </ul>
+              </div>
           </div>
       </div>
   </div>
@@ -80,12 +110,16 @@
 </script>
 
 <style lang="scss" scoped>
+    .cp_common_area {top: 70px;}
     .task-wrap {
+        overflow-y: scroll;
         display: flex;
         justify-content: flex-start;
+        height: calc(100% - 130px);
         background: #fef8ea;
-        padding: 20px 0;
+        padding: 20px 0 8px;
         .daily {
+            position: fixed;
             display: flex;
             flex-direction: column;
             flex-shrink: 0;
@@ -96,8 +130,9 @@
             }
         }
         .task-box {
-            width: 100%;
+            width: calc(100% - 53px);
             margin-right: 4vw;
+            margin-left: auto;
             color: #333333;
             .task-title-wrap {
                 border-radius: 12px;

@@ -3,7 +3,7 @@
 <!--    달력ui-->
 <!--    <calendar class="mt-20"></calendar>-->
 <!--    달력ui-->
-      <mini-calendar></mini-calendar>
+      <mini-calendar :style="`position: fixed;z-index: 5;background: #ffffff;`"></mini-calendar>
       <task-box></task-box>
 
   </div>
