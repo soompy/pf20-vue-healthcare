@@ -18,8 +18,9 @@
       </div>
     </div>
 
-
     <HealthRecord></HealthRecord>
+
+    <accordion></accordion>
 
 <!--    체중관리그래프와 BMI-->
 
@@ -30,9 +31,8 @@
 </template>
 
 <script>
-
-  import AccountBox from "../../components/layouts/accountBox";
   import HealthRecord from "../../components/swiper/health-record";
+  import Accordion from "../../components/ui/Accordion";
   export default {
     name: 'Mypage',
     data() {
@@ -41,8 +41,8 @@
       }
     },
     components: {
+      Accordion,
       HealthRecord,
-      AccountBox
     }
   }
 </script>
