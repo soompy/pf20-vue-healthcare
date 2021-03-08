@@ -70,6 +70,7 @@
   .signin-subtitle {
     text-align: left;
     margin-bottom: 40px;
+    color: #777777;
   }
   .common_area {
     display: flex;

@@ -1,27 +1,38 @@
 <template>
   <div class="common_area">
-    <h2>page</h2>
+    <account-box></account-box>
 
-    <div class="wrap">
-      <div class="box">
-        <div class="item v1">1</div>
-        <div class="item v2">2</div>
-        <div class="item v3">3</div>
-        <div class="item v4">4</div>
-        <div class="item v5">5</div>
-        <div class="item v6">6</div>
-        <div class="item v7">7</div>
-        <div class="item v8">8</div>
-        <div class="item v9">9</div>
-        <div class="item v10">10</div>
+    <div class="report-wrap">
+      <ul class="report-box">
+        <li class="report-list"><span class="record"><strong>5</strong>시간</span>활동시간</li>
+        <li class="report-list"><span class="record"><strong>1.4</strong>km</span>활동량</li>
+        <li class="report-list"><span class="record"><strong>300</strong>kcal</span>칼로리</li>
+        <li class="report-list"><span class="record"><strong>1.6</strong>L</span>수분섭취</li>
+      </ul>
+
+      <div class="weekly-check">
+        <ul class="check-list-box">
+          <li class="check-list"><span class="record"><strong>120 &#x002F; 90</strong>mmHg</span>혈압</li>
+          <li class="check-list"><span class="record"><strong>52.1</strong>kg</span>체중</li>
+        </ul>
       </div>
     </div>
+
+
+    <HealthRecord></HealthRecord>
+
+<!--    체중관리그래프와 BMI-->
+
+
+<!--    리마인더-->
 
   </div>
 </template>
 
 <script>
 
+  import AccountBox from "../../components/layouts/accountBox";
+  import HealthRecord from "../../components/swiper/health-record";
   export default {
     name: 'Mypage',
     data() {
@@ -30,79 +41,48 @@
       }
     },
     components: {
-
+      HealthRecord,
+      AccountBox
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  .wrap{
-    width:100%;
-    color: #FFFFFF;
+  .report-wrap {
+    padding: 20px 4vw;
   }
-  .box{
-    display: grid;
-    display: -ms-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows:1fr 1fr 1fr 1fr;
-  }
-  .item{
+  .report-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    margin: 10px;
-    background-color: #333;
+    padding-bottom: 20px;
+    .report-list {
+      flex: 1;
+    }
   }
-  .item:nth-child(1){
-    -ms-grid-column:1;
-    -ms-grid-row: 1;
-  }
-  .item:nth-child(2){
-    -ms-grid-column:2;
-    -ms-grid-row: 1;
-  }
-  .item:nth-child(3){
-    -ms-grid-column:1;
-    -ms-grid-row: 2;
-  }
-  .item:nth-child(4){
-    -ms-grid-column:2;
-    -ms-grid-row: 2;
-  }
-  .item:nth-child(5) {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
-    -ms-grid-column:3;
-    -ms-grid-column-span: 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-  }
-  .item:nth-child(6){
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    -ms-grid-row: 3	;
-    -ms-grid-row-span: 2;
-  }
-  .item:nth-child(7){
-    -ms-grid-column:3;
-    -ms-grid-row: 3;
-  }
-  .item:nth-child(8){
-    -ms-grid-column:4;
-    -ms-grid-row: 3;
-  }
-  .item:nth-child(9){
-    -ms-grid-column:3;
-    -ms-grid-row: 4;
-  }
-  .item:nth-child(10) {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
-    -ms-grid-column:4;
-    -ms-grid-row: 4;
 
+  .record {
+    display: block;
+    strong {
+      font-size: 18px;
+      color: #3f51b5;
+    }
   }
+
+  .weekly-check {
+    padding: 8px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    border: 2px solid #FBC02D;
+    background: #FFFFFF;
+    .check-list-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .check-list {
+        padding: 0 4vw;
+      }
+    }
+  }
+
 </style>

@@ -27,7 +27,7 @@
     .account {
         display: flex;
         padding: 20px 16px;
-        border-bottom: 1px solid #cccccc;
+        background: #FBC02D;
         .profile-info {
             text-align: left;
             .name {

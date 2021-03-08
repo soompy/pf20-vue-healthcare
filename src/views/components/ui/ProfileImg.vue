@@ -24,6 +24,6 @@
         height: 50px;
         background: url('../../../assets/images/profile.png') center center no-repeat;
         background-size: cover;
-        border: 1px solid #FBC02D;
+        border: 1px solid #777777;
     }
 </style>
