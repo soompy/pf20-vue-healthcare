@@ -1,14 +1,29 @@
 <template>
-    <div class="cp_common_area">
-        <div class="progress-wrap progress" data-progress-percent="25">
-            <div class="progress-bar progress"></div>
-        </div>
+    <div class="progress-wrap progress" data-progress-percent="25">
+        <div class="progress-bar progress" ></div>
     </div>
 </template>
 
 <script>
+    /**
+        1. props의 value값이 1부터 100까지인지(허용범위) 체크
+        2. value 값을 width값으로 적용(class(너비 클래스 정의)로하거나 style로 할 것인가 - 클래스가 우선)
+
+        ++ 애니메이션 넣기
+     */
+
     export default {
-        name: 'ProgressBar'
+        name: 'ProgressBar',
+        props: {
+            value: {
+                type: Number,
+                default: 0
+            }
+        },
+        created() {        
+            console.log('value', this.value)
+        },
+
     }
 </script>
 
@@ -28,7 +43,7 @@
             left: 0;
             position: absolute;
             top: 0;
-            width: 40%;
+            // width: 40%;
         }
     }
 </style>
