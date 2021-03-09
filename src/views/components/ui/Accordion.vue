@@ -2,21 +2,21 @@
     <div class="accordion-wrap">
         <ul class="accordion-box">
             <li class="accordion-item active">
-                <h4><div class="accordion-title"><span class="under-line"> <span>오늘의 할일</span></span><slot><i class="ic_plus wh-20 dark-grey"></i></slot></div></h4>
+                <h4><div class="accordion-title"><span class="under-line">오늘의 할일</span><slot><i class="ic_plus wh-20 dark-grey"></i></slot></div></h4>
                 <div class="accordion-content">
                     <p>헬스장에 가서 푸쉬업 20개, 스쿼트 50개씩 3세트, 케틀벨 스윙 30회</p>
                 </div>
             </li>
             <li class="accordion-item">
-                <h4><span>내일 목표 운동량 <slot><i class="ic_plus wh-20 dark-grey"></i></slot></span></h4>
+                <h4><div class="accordion-title"><span class="under-line">내일 목표 운동량</span><slot><i class="ic_plus wh-20 dark-grey"></i></slot></div></h4>
                 <div class="accordion-content">
-                    <p>내용</p>
+                    <p>헬스장에 가서 푸쉬업 20개, 스쿼트 50개씩 3세트, 케틀벨 스윙 30회</p>
                 </div>
             </li>
             <li class="accordion-item">
-                <h4><span>2021년에 달성할 것들 <slot><i class="ic_plus wh-20 dark-grey"></i></slot></span></h4>
+                <h4><div class="accordion-title"><span class="under-line">2021년에 달성할 것들</span><slot><i class="ic_plus wh-20 dark-grey"></i></slot></div></h4>
                 <div class="accordion-content">
-                    <p>내용</p>
+                    <p>헬스장에 가서 푸쉬업 20개, 스쿼트 50개씩 3세트, 케틀벨 스윙 30회</p>
                 </div>
             </li>
         </ul>
@@ -62,14 +62,16 @@
                     font-size: 13px;
                     padding: 12px 0;
                     .accordion-title {
+                        display: flex;
                         width: 100%;
-                    }
-                    span {
-                        align-items: center;
+                        span {
+                            align-items: center;
+                        }
                         i {
                             margin-left: auto;
                         }
                     }
+
                 }
                 .accordion-content {
                     display: none;
@@ -83,16 +85,30 @@
                     .accordion-content {
                         display: block;
                     }
+                    .under-line {
+                        &:after {
+                            display: inline-block;
+                            clear: both;
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 3px;
+                            z-index: -1;
+                            width: 100%;
+                            height: 5px;
+                            background: #FBC02D;
+                        }
+                    }
                 }
             }
         }
     }
 
     .under-line {
-        display: inline-block;
+        position: relative;
         font-size: 14px;
-        height: 19px;
-        box-shadow: 0 8px 0 0 #FBC02D, 0 8px 0 0 #FBC02D;
-        /*padding: 12px 0;*/
+        &:after {
+            display: none;
+        }
     }
 </style>
