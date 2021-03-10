@@ -4,7 +4,7 @@
             <div class="personal-card-list">
                 <strong class="dp-b">상체</strong>
                 <span class="dp-b fc-grey">푸쉬업 목표치</span>
-                <progress-bar :value="30"></progress-bar>
+                <progress-bar :value="30" percentage="30"></progress-bar>
             </div>
         </swiper-slide>
         <swiper-slide class="">

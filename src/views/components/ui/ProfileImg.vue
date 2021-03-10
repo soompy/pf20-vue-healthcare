@@ -18,6 +18,7 @@
 
 <style lang="scss" scoped>
     .profile {
+        display: block;
         position: relative;
         flex-shrink: 0;
         width: 50px;

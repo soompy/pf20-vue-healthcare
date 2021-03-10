@@ -11,6 +11,7 @@
         <router-link to="/common-ui">commonUi</router-link>
         <router-link to="/login">Login</router-link>
         <router-link to="/search-page">Search</router-link>
+        <router-link to="/schedule">Schedule</router-link>
     </div>
 </template>
 

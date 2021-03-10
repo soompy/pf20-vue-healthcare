@@ -1,6 +1,6 @@
 <template>
     <div class="progress-wrap progress" data-progress-percent="25">
-        <div class="progress-bar progress" ></div>
+        <div class="progress-bar progress" :class="[percentageClass]"></div>
     </div>
 </template>
 
@@ -14,16 +14,30 @@
 
     export default {
         name: 'ProgressBar',
+        data() {
+            return {
+
+            }
+        },
         props: {
             value: {
                 type: Number,
                 default: 0
+            },
+            percentageRange: {
+                type: Boolean,
+                default: false
             }
         },
-        created() {        
+        created() {
             console.log('value', this.value)
         },
-
+        computed: {
+            percentageClass() {
+                // return this.percentageRange.includes(this.percentage) ? `wd-${this.percentage}` : '0'
+                return this.percentageRange.true ? console.log('value', this.value) : '꽝'
+            }
+        }
     }
 </script>
 
