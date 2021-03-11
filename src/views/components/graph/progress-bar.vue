@@ -1,6 +1,6 @@
 <template>
     <div class="progress-wrap progress" data-progress-percent="25">
-        <div class="progress-bar progress" :class="[percentageClass]"></div>
+        <progress class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" :class="[percentageClass]"></progress>
     </div>
 </template>
 
