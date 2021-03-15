@@ -1,6 +1,7 @@
 <template>
     <div class="progress-wrap progress" data-progress-percent="25">
-        <progress class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" :class="[percentageClass]"></progress>
+<!--        <progress class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" :class="[percentageClass]"></progress>-->
+        <div class="progress-bar progress" :class="[percentageClass]"></div>
     </div>
 </template>
 
@@ -16,7 +17,7 @@
         name: 'ProgressBar',
         data() {
             return {
-
+                // percentageRange: []
             }
         },
         props: {
@@ -35,7 +36,8 @@
         computed: {
             percentageClass() {
                 // return this.percentageRange.includes(this.percentage) ? `wd-${this.percentage}` : '0'
-                return this.percentageRange.true ? console.log('value', this.value) : '꽝'
+                return this.percentageRange.true ? console.log('value', this.value) : console.log('숫자 아님');
+                // return this.percentageRange.includes(this.percentage) ? `wd-${this.percentage}` : ''
             }
         }
     }
@@ -57,7 +59,11 @@
             left: 0;
             position: absolute;
             top: 0;
-            // width: 40%;
+            /*animation: lengtheningEffect 5.0s linear infinite;*/
+            @keyframes lengtheningEffect {
+                0%{transform: translateX(0);}
+                100%{transform: translateX(100%);}
+            }
         }
     }
 </style>
