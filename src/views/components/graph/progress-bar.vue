@@ -1,7 +1,6 @@
 <template>
-    <div class="progress-wrap progress" data-progress-percent="25">
-<!--        <progress class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" :class="[percentageClass]"></progress>-->
-        <div class="progress-bar progress" :class="[percentageClass]"></div>
+    <div class="progress-wrap progress">
+        <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
     </div>
 </template>
 
@@ -17,27 +16,27 @@
         name: 'ProgressBar',
         data() {
             return {
-                // percentageRange: []
+                val : 0
             }
         },
         props: {
             value: {
                 type: Number,
-                default: 0
-            },
-            percentageRange: {
-                type: Boolean,
-                default: false
+                default: 0,
             }
         },
         created() {
             console.log('value', this.value)
+            this.checkValue()
         },
-        computed: {
-            percentageClass() {
-                // return this.percentageRange.includes(this.percentage) ? `wd-${this.percentage}` : '0'
-                return this.percentageRange.true ? console.log('value', this.value) : console.log('숫자 아님');
-                // return this.percentageRange.includes(this.percentage) ? `wd-${this.percentage}` : ''
+        methods: {
+            checkValue () {
+                if(this.value >= 0 && this.value <= 100) {
+                    console.log(this.value)
+                    this.val = this.value
+                } else {            
+                    console.log("1~100 범위로 입력해 주십시오.");   
+                }
             }
         }
     }

@@ -4,21 +4,21 @@
             <div class="personal-card-list">
                 <strong class="dp-b">상체</strong>
                 <span class="dp-b fc-grey">푸쉬업 목표치</span>
-                <progress-bar :value="30" percentage="30"></progress-bar>
+                <progress-bar :value="-30" percentage="30"></progress-bar>
             </div>
         </swiper-slide>
         <swiper-slide class="">
             <div class="personal-card-list">
                 <strong class="dp-b">코어</strong>
                 <span class="dp-b fc-grey">윗몸일으키기 목표치</span>
-                <progress-bar></progress-bar>
+                <progress-bar :value="40"></progress-bar>
             </div>
         </swiper-slide>
         <swiper-slide class="">
             <div class="personal-card-list">
                 <strong class="dp-b">하체</strong>
                 <span class="dp-b fc-grey">스쿼드 목표치</span>
-                <progress-bar></progress-bar>
+                <progress-bar :value="80"></progress-bar>
             </div>
         </swiper-slide>
         <div class="swiper-pagination bottom-00" slot="pagination"></div>

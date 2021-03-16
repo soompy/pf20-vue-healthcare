@@ -1,7 +1,7 @@
 <template>
     <!-- 2.x 버전은 루트 element 가 하나 여야 한다. -->
     <div>
-        내용
+        {{getMsg()}} {{msg}} {{value}} {{sample}}
     </div>
 </template>
 
@@ -33,7 +33,7 @@
         components: {},
         // 컴포넌트 어트리뷰트 그룹
         props: {
-            propG: {
+           value: {
                 type: Number,
                 default: 0,
             }
@@ -45,19 +45,16 @@
             }
         },
         computed: {
-            sample () { return '' } // 내부 변수가 업데이트 되면 자동으로 반영 됩니다. watch 와 많이 비교 됩니다.
+            sample () { return this.value } // 내부 변수가 업데이트 되면 자동으로 반영 됩니다. watch 와 많이 비교 됩니다.
         },
         // 컴포넌트 메서드 그룹
         watch: {
             // 새로운 값 과 이전 값을 을 파라미터로 넣어 줍니다. computed 와 많이 비교 합니다. 차이는 computed 는 값이 같으면 캐쉬된 값을 반환 하기에 리소스를 적게 사용한다고 써있습니다.
-            // value (newVal, oldVal) { console.log('template::watch::value::', newVal, oldVal, this) }
+            value (newVal, oldVal) { console.log('template::watch::value::', newVal, oldVal, this) }
         },
         created() {
-            console.log('created::', this.$api)
+            console.log('created::')
             // api 호출
-            this.$api.club.testApi({ data: { page: 1, perPage: 12, areaCode: 0, GPS: '', ADR: '', searchKeyword: '' } }).then(res => {
-                console.log('testApi::res::', res)
-            })
         },
         mounted() {
             this.$nextTick(function () {
@@ -65,7 +62,11 @@
             });
         },
         // 함수
-        methods: {},
+        methods: {
+            getMsg () {
+                return this.msg
+            }
+        },
         beforeDestroy() {}
     };
 </script>
