@@ -1,8 +1,8 @@
 <template>
 <div>
-    <div>{{val}}</div>
+    <div>{{value}}</div>
     <div class="progress-wrap progress">
-        <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
+        <div class="progress-bar progress" :style="`width: ${value}%;`"></div>
     </div>
 </div>
 </template>
@@ -14,15 +14,13 @@
 
         ++ 애니메이션 넣기
 
-        이 버전은 부모의 값이 변경되어도 자식의 값이 변경되지 않는다. 즉 여기에 this.val값의 변경이 없음
+        부모의 값이 바뀌면 자식의 값도 바뀌지만 값을 제한할 수 없다.(0~100사이의 값이 들어왔을때 value체크 처리를 할 수 없다. - 값 검증 못한다. )
      */
 
     export default {
         name: 'ProgressBar',
         data() {
-            return {
-                val : 0
-            }
+            return {}
         },
         props: {
             value: {
@@ -30,20 +28,12 @@
                 default: 0,
             }
         },
+        computed: {
+        },
         created() {
             console.log('value', this.value)
-            this.checkValue()
         },
-        methods: {
-            checkValue () {
-                if(this.value >= 0 && this.value <= 100) {
-                    console.log(this.value)
-                    this.val = this.value
-                } else {            
-                    console.log("1~100 범위로 입력해 주십시오.");   
-                }
-            }
-        }
+        methods: {}
     }
 </script>
 

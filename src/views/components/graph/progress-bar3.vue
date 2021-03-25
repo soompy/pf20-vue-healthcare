@@ -11,18 +11,18 @@
     /**
         1. props의 value값이 1부터 100까지인지(허용범위) 체크
         2. value 값을 width값으로 적용(class(너비 클래스 정의)로하거나 style로 할 것인가 - 클래스가 우선)
+        3. 0 이하 인경우 0 으로 처리, 100 이상인 경우 인경우 100 으로 처리
 
         ++ 애니메이션 넣기
 
-        이 버전은 부모의 값이 변경되어도 자식의 값이 변경되지 않는다. 즉 여기에 this.val값의 변경이 없음
+        this.value 값 이 들어오면 0하고 100사이일때에만 정상동작 하도록 처리할 수 있다.
+        만약 100이상, 0이하가 들어오면 기본값으로 0을 리턴한다.
      */
 
     export default {
         name: 'ProgressBar',
         data() {
-            return {
-                val : 0
-            }
+            return {}
         },
         props: {
             value: {
@@ -30,20 +30,17 @@
                 default: 0,
             }
         },
+        computed: {
+            val () {
+               if(this.value < 0) return 0 // 0 보다 작으면 0 리턴
+               if(this.value > 100) return 100 // 100 보다 크면  100 리턴
+                return this.value // 그외 는 현재값 리턴
+            } // 내부 변수가 업데이트 되면 자동으로 반영 됩니다. watch 와 많이 비교 됩니다.
+        },
         created() {
             console.log('value', this.value)
-            this.checkValue()
         },
-        methods: {
-            checkValue () {
-                if(this.value >= 0 && this.value <= 100) {
-                    console.log(this.value)
-                    this.val = this.value
-                } else {            
-                    console.log("1~100 범위로 입력해 주십시오.");   
-                }
-            }
-        }
+        methods: {}
     }
 </script>
 
