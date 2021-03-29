@@ -2,6 +2,14 @@
     <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide class="">
             <div class="personal-card-list">
+                <strong class="dp-b">연습</strong>
+                <span class="dp-b fc-grey">프로그래스 바 연습 computed</span>
+                <p-progress-bar></p-progress-bar>
+            </div>
+        </swiper-slide>
+
+        <swiper-slide class="">
+            <div class="personal-card-list">
                 <strong class="dp-b">상체</strong>
                 <span class="dp-b fc-grey">푸쉬업 목표치</span>
                 <progress-bar :value="-30" percentage="30"></progress-bar>
@@ -22,7 +30,7 @@
             </div>
         </swiper-slide>
         <div class="swiper-pagination bottom-00" slot="pagination"></div>
-        
+
     </swiper>
 </template>
 
@@ -30,10 +38,12 @@
     import ProgressBar from "../graph/progress-bar";
     import ProgressBar2 from "../graph/progress-bar2";
     import ProgressBar3 from "../graph/progress-bar3";
+    import PProgressBar from "../graph/practice-progress-bar";
 
     export default {
         name: 'AutoPer',
         components: {
+            PProgressBar,
             ProgressBar,
             ProgressBar2,
             ProgressBar3,

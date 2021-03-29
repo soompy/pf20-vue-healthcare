@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div>{{val}}</div>
+    <div class="value-box">{{val}}</div>
     <div class="progress-wrap progress">
         <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
     </div>
@@ -45,6 +45,31 @@
 </script>
 
 <style lang="scss" scoped>
+    .value-box {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+
+        padding: 0 4px;
+        background: #3f51b5;
+        color: #FFFFFF;
+        border-radius: 6px;
+        &:after {
+            display: block;
+            clear: both;
+            content: '';
+            position: absolute;
+            left: 25%;
+            bottom: -6px;
+            width: 0px;
+            height: 0px;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid #3f51b5;
+            border-right: 6px solid transparent;
+            border-left: 6px solid  transparent;
+            transform: rotate(90deg);
+        }
+    }
     .progress {
         width: 100%;
         height: 10px;
