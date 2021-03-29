@@ -2,14 +2,14 @@
     <div class="common_area">
         <AccountBox></AccountBox>
 
-        <router-link to="/">Home</router-link>
+        <router-link to="/main">main</router-link>
         <router-link to="/mypage">Mypage</router-link>
         <router-link to="/planner">Planner</router-link>
         <router-link to="/note">Note</router-link>
         <router-link to="/community">Community</router-link>
         <router-link to="/notice">Notice</router-link>
         <router-link to="/common-ui">commonUi</router-link>
-        <router-link to="/login">Login</router-link>
+        <router-link to="/">Login</router-link>
         <router-link to="/search-page">Search</router-link>
         <router-link to="/schedule">Schedule</router-link>
     </div>

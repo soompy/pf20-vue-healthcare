@@ -39,7 +39,7 @@
 
   import Buttons from "../../components/ui/Buttons";
   export default {
-    name: 'Login',
+    name: 'Home',
     data() {
       return {
         label: 'Sign in',

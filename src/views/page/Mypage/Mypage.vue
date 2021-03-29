@@ -33,6 +33,8 @@
 <script>
   import HealthRecord from "../../components/swiper/health-record";
   import Accordion from "../../components/ui/Accordion";
+  import AccountBox from "../../components/layouts/accountBox";
+
   export default {
     name: 'Mypage',
     data() {
@@ -41,6 +43,7 @@
       }
     },
     components: {
+      AccountBox,
       Accordion,
       HealthRecord,
     }
