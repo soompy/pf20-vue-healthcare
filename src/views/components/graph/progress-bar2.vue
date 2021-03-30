@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="value-box">{{value}}</div>
+    <div class="value-box" :style="`margin-left: ${value}%`">{{value}}</div>
     <div class="progress-wrap progress">
         <div class="progress-bar progress" :style="`width: ${value}%;`"></div>
     </div>

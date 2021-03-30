@@ -4,7 +4,7 @@
             <div class="personal-card-list">
                 <strong class="dp-b">연습</strong>
                 <span class="dp-b fc-grey">프로그래스 바 연습 computed</span>
-                <p-progress-bar></p-progress-bar>
+                <p-progress-bar :value="20"></p-progress-bar>
             </div>
         </swiper-slide>
 

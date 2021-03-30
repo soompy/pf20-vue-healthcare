@@ -1,9 +1,9 @@
 <template>
 <div>
-<!--    <div class="value-box">{{valueBox}}</div>-->
-<!--    <div class="progress-wrap progress">-->
-<!--        <div class="progress-bar progress" :style="`width: ${val}%;`"></div>-->
-<!--    </div>-->
+    <div class="value-box" :style="`margin-left: ${val}%`">{{val}}</div>
+    <div class="progress-wrap progress">
+        <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
+    </div>
 </div>
 </template>
 
@@ -15,32 +15,36 @@
 
         ++ 애니메이션 넣기
 
-        this.value 값 이 들어오면 0하고 100사이일때에만 정상동작 하도록 처리할 수 있다.
-        만약 100이상, 0이하가 들어오면 기본값으로 0을 리턴한다.
-     */
 
+             부모의 값이 변경되어도 값이 변경되지 않음 .
+                this.val값의 변경이 없음
+     */
     export default {
-        name: 'pProgressBar',
+        name: 'ppp',
         data() {
-            return {}
-        },
-        props: {
-            value: {
-                type: Number,
-                default: 0,
+            return {
+                val: 0
             }
         },
-        computed: {
-            val () {
-               if(this.value < 0) return 0 // 0 보다 작으면 0 리턴
-               if(this.value > 100) return 100 // 100 보다 크면  100 리턴
-                return this.value // 그외 는 현재값 리턴
-            } // 내부 변수가 업데이트 되면 자동으로 반영 됩니다. watch 와 많이 비교 됩니다.
+        props: { // 값을 전달
+            value: {
+                type: Number,
+                default: 0
+            }
         },
         created() {
-            console.log('value', this.value)
+            this.checkValue();
         },
-        methods: {}
+        methods: {
+            checkValue() {
+                if(this.value >= 0 && this.value < 101 ) {
+                    this.val = this.value
+                } else {
+                    console.log('0~100까지만')
+                }
+            }
+        }
+
     }
 </script>
 
@@ -59,7 +63,7 @@
             clear: both;
             content: '';
             position: absolute;
-            left: 25%;
+            left: 50%;
             bottom: -6px;
             width: 0px;
             height: 0px;
