@@ -25,4 +25,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 ### 2021.04.01 
-[다음번 작업 참고](https://dribbble.com/shots/11397539-Mindfulness-App-Concept-Animated).
+[다음번 작업 참고](https://dribbble.com/shots/11397539-Mindfulness-App-Concept-Animated)
+[마우스 효과] (https://wickret.cuberto.com/)
+[영감 사이트] (https://dribbble.com/)
+[Material Desigh] (https://material.io/)
+
