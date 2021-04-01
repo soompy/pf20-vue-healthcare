@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### 2021.04.01 
+[다음번 작업 참고](https://dribbble.com/shots/11397539-Mindfulness-App-Concept-Animated).
