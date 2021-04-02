@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div>{{val}}</div>
+    <div class="value-box" :style="`margin-left: ${val}%`">{{val}}</div>
     <div class="progress-wrap progress">
         <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
     </div>
@@ -39,8 +39,8 @@
                 if(this.value >= 0 && this.value <= 100) {
                     console.log(this.value)
                     this.val = this.value
-                } else {            
-                    console.log("1~100 범위로 입력해 주십시오.");   
+                } else {
+                    console.log("1~100 범위로 입력해 주십시오.");
                 }
             }
         }
@@ -48,6 +48,30 @@
 </script>
 
 <style lang="scss" scoped>
+    .value-box {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 0 4px;
+        background: #3f51b5;
+        color: #FFFFFF;
+        border-radius: 6px;
+        &:after {
+            display: block;
+            clear: both;
+            content: '';
+            position: absolute;
+            left: 25%;
+            bottom: -6px;
+            width: 0px;
+            height: 0px;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid #3f51b5;
+            border-right: 6px solid transparent;
+            border-left: 6px solid  transparent;
+            transform: rotate(90deg);
+        }
+    }
     .progress {
         width: 100%;
         height: 10px;
