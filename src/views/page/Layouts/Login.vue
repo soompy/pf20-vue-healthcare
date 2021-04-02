@@ -39,7 +39,7 @@
 
   import Buttons from "../../components/ui/Buttons";
   export default {
-    name: 'Login',
+    name: 'Home',
     data() {
       return {
         label: 'Sign in',
@@ -119,6 +119,7 @@
   }
 
   .form-error-msg {
+    transition: all 0.3s ease-in-out;
     font-size: 12px;
     color: #E53935;
   }
