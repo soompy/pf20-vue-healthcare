@@ -5,14 +5,14 @@
       <profile></profile>
       <div class="status-box">
         <div class="nickname-info"><strong>A</strong>님의 진행도</div>
-        <!-- 진척도 콘텐츠 -->
-        <auto-per></auto-per>
-        <!-- 진척도 콘텐츠 -->
       </div>
     </div>
     <!-- 상단 -->
 
     <mini-calendar></mini-calendar>
+
+    <!-- 진척도 콘텐츠 -->
+    <auto-per></auto-per>
 
     <square-list></square-list>
   </div>

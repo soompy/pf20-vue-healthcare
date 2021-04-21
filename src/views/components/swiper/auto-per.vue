@@ -19,14 +19,15 @@
             <div class="personal-card-list">
                 <strong class="dp-b">코어</strong>
                 <span class="dp-b fc-grey">윗몸일으키기 목표치</span>
-                <progress-bar-2 :value="valRamdom"></progress-bar-2>
+<!--                <progress-bar-2 :value="valRandom"></progress-bar-2>-->
+                <progress-bar-2 :value="38"></progress-bar-2>
             </div>
         </swiper-slide>
         <swiper-slide class="">
             <div class="personal-card-list">
                 <strong class="dp-b">하체</strong>
                 <span class="dp-b fc-grey">스쿼드 목표치</span>
-                <progress-bar-3 :value="valRamdom" />
+                <progress-bar-3 :value="valRandom" />
             </div>
         </swiper-slide>
         <div class="swiper-pagination bottom-00" slot="pagination"></div>
@@ -50,7 +51,7 @@
         },
         data() {
             return {
-                valRamdom: 0,
+                valRandom: 0,
                 swiperOptions: {
                     // slidesPerView: '2',
                     spaceBetween: 30,
@@ -89,8 +90,8 @@
         mounted() {
             console.log('Current Swiper instance object', this.swiper)
             setInterval(_ => {
-                this.valRamdom = Math.random() * 200
-                console.log('setInterval::', this.valRamdom)
+                this.valRandom = Math.floor(Math.random() * 200)
+                console.log('setInterval::', this.valRandom)
             }, 1000)
         },
         component: {

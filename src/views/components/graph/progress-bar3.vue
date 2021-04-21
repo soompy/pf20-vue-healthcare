@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="value-box" :style="`margin-left: ${val}%`">{{val}}</div>
+    <div class="value-box" :style="`margin-left: calc(${val}% - 22px)`">{{val}}%</div>
     <div class="progress-wrap progress">
         <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
     </div>
@@ -48,8 +48,8 @@
     .value-box {
         display: inline-block;
         position: relative;
+        width: max-content;
         text-align: center;
-
         padding: 0 4px;
         background: #3f51b5;
         color: #FFFFFF;
@@ -59,7 +59,7 @@
             clear: both;
             content: '';
             position: absolute;
-            left: 25%;
+            right: 0;
             bottom: -6px;
             width: 0px;
             height: 0px;
