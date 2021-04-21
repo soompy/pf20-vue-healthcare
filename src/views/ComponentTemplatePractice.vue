@@ -24,10 +24,49 @@
      version 0.1
      */
     export default {
-
-    }
+        name: 'ComponentPractice',
+        mixins: [],
+        directives: {},
+        components: {},
+        props: {
+            value: {
+                type: Number,
+                default: 0
+            }
+        },
+        data() {
+            return {
+                msg: ''
+            }
+        },
+        computed: {
+            sample() {
+                return this.value
+            }
+        },
+        watch: {
+            value(newVal, oldVal) {
+                return ( console.log('template::watch::value::', newVal, oldVal, this))
+            }
+        },
+        created() {
+            console.log('created::')
+        },
+        mounted() {
+            this.$nextTick(function() {
+                //
+            })
+        },
+        methods: {
+            getMsg() {
+                return this.msg
+            }
+        },
+        beforeDestroy() {}        
+    };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 </style>
+

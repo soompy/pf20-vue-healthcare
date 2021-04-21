@@ -1,6 +1,10 @@
 <template>
 <div>
+<<<<<<< HEAD
     <div class="value-box" :style="`margin-left: calc(${val}% - 22px)`">{{val}}%</div>
+=======
+    <div class="value-box" :style="`margin-left: calc(${val}% - 30px)`">{{val}}</div>
+>>>>>>> df88d7d94492e430c1893f04e07fb81cf7ad1a06
     <div class="progress-wrap progress">
         <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
     </div>

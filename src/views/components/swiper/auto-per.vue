@@ -3,8 +3,8 @@
         <swiper-slide class="">
             <div class="personal-card-list">
                 <strong class="dp-b">연습</strong>
-                <span class="dp-b fc-grey">프로그래스 바 연습 computed</span>
-                <p-progress-bar :value="20"></p-progress-bar>
+                <span class="dp-b fc-grey">프로그래스 바 연습 computed</span>                
+                <practice-progress-bar :value="120"></practice-progress-bar>
             </div>
         </swiper-slide>
 
@@ -19,8 +19,13 @@
             <div class="personal-card-list">
                 <strong class="dp-b">코어</strong>
                 <span class="dp-b fc-grey">윗몸일으키기 목표치</span>
+<<<<<<< HEAD
 <!--                <progress-bar-2 :value="valRandom"></progress-bar-2>-->
                 <progress-bar-2 :value="38"></progress-bar-2>
+=======
+                <progress-bar :value="valRamdom"></progress-bar>
+                <!-- <progress-bar-2 :value="valRamdom"></progress-bar-2> -->
+>>>>>>> df88d7d94492e430c1893f04e07fb81cf7ad1a06
             </div>
         </swiper-slide>
         <swiper-slide class="">
@@ -37,17 +42,18 @@
 
 <script>
     import ProgressBar from "../graph/progress-bar";
-    import ProgressBar2 from "../graph/progress-bar2";
+    // import ProgressBar2 from "../graph/progress-bar2";
     import ProgressBar3 from "../graph/progress-bar3";
-    import PProgressBar from "../graph/practice-progress-bar";
+    import PracticeProgressBar from '../graph/practice-progress-bar';
+    
 
     export default {
         name: 'AutoPer',
-        components: {
-            PProgressBar,
+        components: {            
             ProgressBar,
-            ProgressBar2,
+            // ProgressBar2,
             ProgressBar3,
+            PracticeProgressBar,
         },
         data() {
             return {
@@ -90,8 +96,13 @@
         mounted() {
             console.log('Current Swiper instance object', this.swiper)
             setInterval(_ => {
+<<<<<<< HEAD
                 this.valRandom = Math.floor(Math.random() * 200)
                 console.log('setInterval::', this.valRandom)
+=======
+                this.valRamdom = Math.floor(Math.random() * 200)
+                console.log('setInterval::', this.valRamdom)
+>>>>>>> df88d7d94492e430c1893f04e07fb81cf7ad1a06
             }, 1000)
         },
         component: {

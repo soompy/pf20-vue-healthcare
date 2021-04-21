@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="value-box" :style="`margin-left: ${val}%`">{{val}}</div>
+    <div class="value-box" :style="`margin-left: calc(${val}% - 30px)`">{{val}}</div>
     <div class="progress-wrap progress">
         <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
     </div>
@@ -30,17 +30,30 @@
                 default: 0,
             }
         },
-        created() {
+        created() { // 최초 한번만 호출(this.value가 감지되지 못함)
             console.log('value', this.value)
             this.checkValue()
+        },        
+        watch: { // methods 호출시엔 watch사용이 용이
+            value(newVal, oldVal) {
+                console.log('newVal::oldVal::template', newVal, oldVal)
+                this.checkValue() 
+            }
         },
+        // computed는(return하는 함수가 반드시 있어야함) value를 받아서 처리결과를 return 하는 코드를 짜줘야 함
         methods: {
             checkValue () {
                 if(this.value >= 0 && this.value <= 100) {
                     console.log(this.value)
                     this.val = this.value
                 } else {
-                    console.log("1~100 범위로 입력해 주십시오.");
+                    console.log("다시입력");
+                    if (this.value < 0) {
+                        this.val = 0
+                        console.log(this.val)
+                    } else {
+                        this.val = 100
+                    }
                 }
             }
         }

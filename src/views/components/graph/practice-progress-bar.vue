@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="value-box" :style="`margin-left: ${val}%`">{{val}}</div>
+    <div class="value-box" :style="`margin-left: calc(${val}% - 30px)`">{{val}}</div>
     <div class="progress-wrap progress">
         <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
     </div>
@@ -37,10 +37,16 @@
         },
         methods: {
             checkValue() {
-                if(this.value >= 0 && this.value < 101 ) {
+                if(this.value >= 0 && this.value <= 100 ) {
                     this.val = this.value
-                } else {
+                    console.log(this.val);
+                } else {                                                         
                     console.log('0~100까지만')
+                    if(this.value < 0 ){
+                        this.val = 0
+                    } else {
+                        this.val = 100
+                    }
                 }
             }
         }
