@@ -118,7 +118,15 @@
 </template>
 
 <script>
-
+/**
+ * https://momentjs.com/
+ * 1. 범위는 현재주 기준 +- 1주 로 한다. 총 3주
+ * 2. 현재주가 처음 화면에 나타나야 한다. 
+ * 3. 현재날짜 표시 
+ * 4. 클릭시 선택한 날짜 표시
+ * 5. 현재 날짜 고정 으로 작업 (스와이프 해도 현재는 날짜가 늘어나지 않음)
+ */
+import moment from 'moment';
 export default {
   name: "MiniCalendar",
   data() {
@@ -148,6 +156,7 @@ export default {
   },
   mounted() {
     console.log("Current Swiper instance object", this.swiper);
+    console.log("moment::", moment().format('YYYY-MM-DD HH:mm:ss'));
   }
 };
 </script>

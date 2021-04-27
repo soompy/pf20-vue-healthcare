@@ -1,10 +1,10 @@
 <template>
-<div>
-    <div class="value-box" :style="`margin-left: ${value}%`">{{value}}</div>
-    <div class="progress-wrap progress">
-        <div class="progress-bar progress" :style="`width: ${value}%;`"></div>
+    <div>
+        <div class="value-box" :style="`margin-left: ${{val}}%`">{{val}}</div>
+        <div class="progress-wrap progress">
+            <div class="progress-bar progress" :style="`width: ${{val}}%;`"></div>
+        </div>
     </div>
-</div>
 </template>
 
 <script>
@@ -17,6 +17,52 @@
         부모의 값이 바뀌면 자식의 값도 바뀌지만 값을 제한할 수 없다.(0~100사이의 값이 들어왔을때 value체크 처리를 할 수 없다. - 값 검증 못한다. )
      */
 
+    export default {
+        name: 'practiceName',
+        props: {
+            value: {
+                type: Number,
+                default: 0
+            }
+        },
+        data() {
+            return {
+                val: 0
+            }
+        },
+        computed: {
+
+        },
+        watch: {
+            value(newVal, oldVal) {
+                console.log('newVal::oldVal::template', newVal, oldVal)
+                this.checkValue() 
+            }
+        },
+        created() {
+            
+        },
+        mounted() {},
+        methods: {
+              checkValue () {
+                if(this.value >= 0 && this.value <= 100) {
+                    console.log(this.value)
+                    this.val = this.value
+                } else {
+                    console.log("다시입력");
+                    if (this.value < 0) {
+                        this.val = 0
+                        console.log(this.val)
+                    } else {
+                        this.val = 100
+                    }
+                }
+            }
+        }
+    }
+
+
+/**
     export default {
         name: 'ProgressBar',
         data() {
@@ -35,6 +81,7 @@
         },
         methods: {}
     }
+     */
 </script>
 
 <style lang="scss" scoped>

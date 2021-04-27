@@ -1,9 +1,11 @@
 <template>
 <div>
-    <div class="value-box" :style="`margin-left: calc(${val}% - 30px)`">{{val}}</div>
-    <div class="progress-wrap progress">
-        <div class="progress-bar progress" :style="`width: ${val}%;`"></div>
-    </div>
+    <div class="value-box" :style="`margin-left: ${val}%`">{{ val }}</div>
+    <div style="padding: 0 10px;">
+        <div class="progress-wrap progress">
+            <div class="progress-bar progress" :style="`width: ${val}%`"></div>
+        </div>
+    </div>    
 </div>
 </template>
 
@@ -20,64 +22,73 @@
                 this.val값의 변경이 없음
      */
     export default {
-        name: 'ppp',
-        data() {
-            return {
-                val: 0
-            }
-        },
-        props: { // 값을 전달
+        name: 'practicePage',
+        props: {
             value: {
                 type: Number,
                 default: 0
             }
         },
+        data() {
+            return {
+                val: 0
+            }
+        },
+        computed: {
+            //  checkValue() {
+            //      return this.value
+            //  }
+        },
+        watch: {
+          value(newVal, oldVal) {
+                console.log('newVal::oldVal::template', newVal, oldVal)
+                this.checkValue() 
+            }  
+        },
         created() {
-            this.checkValue();
+            // this.checkValue();
+        },
+        mounted() {
+
         },
         methods: {
             checkValue() {
-                if(this.value >= 0 && this.value <= 100 ) {
+                console.log('value', this.value)
+                if(this.value >= 0 && this.value <= 100) {
                     this.val = this.value
-                    console.log(this.val);
-                } else {                                                         
-                    console.log('0~100까지만')
-                    if(this.value < 0 ){
-                        this.val = 0
-                    } else {
-                        this.val = 100
-                    }
+                } else {
+                    console.log("0~100까지의 숫자만 입력")
                 }
             }
         }
-
     }
 </script>
 
 <style lang="scss" scoped>
     .value-box {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
         text-align: center;
-
         padding: 0 4px;
         background: #3f51b5;
         color: #FFFFFF;
-        border-radius: 6px;
+        width: 30px;
+        height: 26px;
+        border-radius: 50%;
         &:after {
             display: block;
             clear: both;
             content: '';
             position: absolute;
-            left: 50%;
-            bottom: -6px;
+            left: 9px;
+            bottom: -3px;
             width: 0px;
             height: 0px;
-            border-top: 6px solid transparent;
-            border-bottom: 6px solid #3f51b5;
-            border-right: 6px solid transparent;
-            border-left: 6px solid  transparent;
-            transform: rotate(90deg);
+            border-top: 13px solid transparent;
+            border-right: 13px solid #3f51b5;            
+            transform: rotate(45deg);
         }
     }
     .progress {

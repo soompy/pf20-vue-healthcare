@@ -4,7 +4,7 @@
             <div class="personal-card-list">
                 <strong class="dp-b">연습</strong>
                 <span class="dp-b fc-grey">프로그래스 바 연습 computed</span>
-                <p-progress-bar :value="20"></p-progress-bar>
+                <p-progress-bar :value="valRandom"></p-progress-bar>
             </div>
         </swiper-slide>
 
@@ -20,7 +20,7 @@
                 <strong class="dp-b">코어</strong>
                 <span class="dp-b fc-grey">윗몸일으키기 목표치</span>
 <!--                <progress-bar-2 :value="valRandom"></progress-bar-2>-->
-                <progress-bar-2 :value="38"></progress-bar-2>
+                <progress-bar-2 :value="valRandom"></progress-bar-2>
             </div>
         </swiper-slide>
         <swiper-slide class="">
@@ -93,11 +93,7 @@
                 this.valRandom = Math.floor(Math.random() * 200)
                 console.log('setInterval::', this.valRandom)
             }, 1000)
-        },
-        component: {
-            ProgressBar,
-            ProgressBar,
-        }
+        },        
     }
 </script>
 
