@@ -1,116 +1,11 @@
 <template>
   <div class="flex-list-scrollX-wrap">
+    {{weeks}}
     <swiper ref="mySwiper" :options="swiperOptions">
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">12</span>
-          <p class="date">금</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item active">
-          <span class="day">13</span>
-          <p class="date">토</p>
-        </div>
-      </swiper-slide>
-
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">14</span>
-          <p class="date">일</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">15</span>
-          <p class="date">월</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">16</span>
-          <p class="date">화</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">17</span>
-          <p class="date">수</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">18</span>
-          <p class="date">목</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">19</span>
-          <p class="date">금</p>
-        </div>
-      </swiper-slide>
-
-     <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">20</span>
-          <p class="date">토</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">21</span>
-          <p class="date">일</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">22</span>
-          <p class="date">월</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">23</span>
-          <p class="date">화</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">24</span>
-          <p class="date">수</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">25</span>
-          <p class="date">목</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">26</span>
-          <p class="date">금</p>
-        </div>
-      </swiper-slide>
-
-      <swiper-slide class="slide-list-item" :class="slideWidthClass">
-        <div class="list-item">
-          <span class="day">27</span>
-          <p class="date">토</p>
+      <swiper-slide class="slide-list-item" :class="slideWidthClass" v-for="days in weeks" :key="days.day">
+        <div class="list-item" :class="{'active': today === days.day}">
+          <span class="day">{{days.day}}</span>          
+          <p class="date">{{days.DayofTheweek}}</p>
         </div>
       </swiper-slide>
     </swiper>
@@ -139,7 +34,18 @@ export default {
           el: ".swiper-pagination",
           clickable: true
         }
-      }
+      },
+      weeks: [],
+      today: moment().date(),
+      weeksName: {
+        Sunday: '일',
+        Monday: '월',
+        Tuesday: '화',
+        Wednesday: '수',
+        Thursday: '목',
+        Friday: '금',
+        Saturday: '토',
+      }     
     };
   },
   components: {},
@@ -152,11 +58,23 @@ export default {
   computed: {
     slideWidthClass() {
       return `list-scroll-${this.slideWidth}`;
-    }
+    },    
   },
   mounted() {
     console.log("Current Swiper instance object", this.swiper);
     console.log("moment::", moment().format('YYYY-MM-DD HH:mm:ss'));
+    const days = moment(moment().day(0)).add(-7, 'days')
+    this.weeks = Array.from({length: 14}, (v,i)=> moment(days).add(i, 'days')).map(v => {
+      return {
+        day: v.date(),
+        DayofTheweek: this.weeksName[v.format('dddd')]
+      }
+    })
+    // this.weeks = Array.from({length: 14}, (v,i)=> i).map(v => moment(days).add(v, 'days').format('YYYY/MM/DD'))
+    console.log(this.weeks)
+  },
+  methods: {
+    
   }
 };
 </script>
