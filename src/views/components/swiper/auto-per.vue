@@ -90,10 +90,10 @@
         },
         mounted() {
             console.log('Current Swiper instance object', this.swiper)
-            setInterval(_ => {
+            // setInterval(_ => {
                 this.valRandom = Math.floor(Math.random() * 200)
                 console.log('setInterval::', this.valRandom)
-            }, 1000)
+            // }, 1000)
         },        
     }
 </script>

@@ -1,12 +1,12 @@
 <template>
   <div class="flex-list-scrollX-wrap">
-    {{weeks}}
     <swiper ref="mySwiper" :options="swiperOptions">
       <swiper-slide class="slide-list-item" :class="slideWidthClass" v-for="days in weeks" :key="days.day">
-        <div class="list-item" :class="{'active': today === days.day}">
+        <div class="list-item" :class="{'active': days.isToday, 'select-date': days.day === selectDate.day}" @click="clickDate(days)">
           <span class="day">{{days.day}}</span>          
-          <p class="date">{{days.DayofTheweek}}</p>
+          <p class="date">{{days.dayofTheweek}}</p>
         </div>
+        {{apiData}}
       </swiper-slide>
     </swiper>
   </div>
@@ -36,7 +36,7 @@ export default {
         }
       },
       weeks: [],
-      today: moment().date(),
+      today: moment(),
       weeksName: {
         Sunday: '일',
         Monday: '월',
@@ -45,7 +45,9 @@ export default {
         Thursday: '목',
         Friday: '금',
         Saturday: '토',
-      }     
+      },
+      selectDate: {},
+      apiData: {}     
     };
   },
   components: {},
@@ -63,18 +65,48 @@ export default {
   mounted() {
     console.log("Current Swiper instance object", this.swiper);
     console.log("moment::", moment().format('YYYY-MM-DD HH:mm:ss'));
+    // {
+    //   day: 1,
+    //   isToday: false,
+    //   month: 1,
+    //   DayofTheweek: '월'
+    // }
     const days = moment(moment().day(0)).add(-7, 'days')
-    this.weeks = Array.from({length: 14}, (v,i)=> moment(days).add(i, 'days')).map(v => {
+    // this.weeks = Array.from({length: 14}, (v,i)=> moment(days).add(i, 'days')).map(v => {
+    //   return {
+    //     day: v.date(),
+    //     DayofTheweek: this.weeksName[v.format('dddd')]
+    //   }
+    // })
+    // this.weeks = Array.from({length: 14}, (v,i)=> i).map(v => moment(days).add(v, 'days').format('YYYY/MM/DD'))
+    this.weeks = Array.from({length: 14}).map((v, i) => {
+      const date = moment(days).add(i, 'days')
       return {
-        day: v.date(),
-        DayofTheweek: this.weeksName[v.format('dddd')]
+        day: date.date(),
+        isToday: date.format('YYYY/MM/DD') === this.today.format('YYYY/MM/DD'),
+        month: date.month() + 1,
+        dayofTheweek: this.weeksName[date.format('dddd')]
       }
     })
-    // this.weeks = Array.from({length: 14}, (v,i)=> i).map(v => moment(days).add(v, 'days').format('YYYY/MM/DD'))
     console.log(this.weeks)
   },
   methods: {
-    
+    clickDate (days) {
+      console.log('click', days)
+      this.selectDate = days
+      console.log(this.apiCall(days))
+    },
+    apiCall (days) {
+      setTimeout(_ => {
+        // api 호출 했다 생각하고 리턴
+        this.apiData = {
+          18: {
+            test:1
+          }
+        }[days.day]
+         console.log('api::', this.apiData, days)
+      }, 1000)
+    }
   }
 };
 </script>
@@ -104,6 +136,9 @@ export default {
       .day {
         border-bottom: 1px solid #FFFFFF;
       }
+    }
+    &.select-date {
+      background: pink;
     }
   }
 </style>
