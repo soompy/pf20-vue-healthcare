@@ -94,7 +94,7 @@ export default {
     clickDate (days) {
       console.log('click', days)
       this.selectDate = days
-      console.log(this.apiCall(days))
+      this.$emit('selectDays', days)
     },
     apiCall (days) {
       setTimeout(_ => {

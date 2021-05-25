@@ -1,21 +1,21 @@
 <template>
     <div class="cp_common_area">
         <ul class="square-list">
-          <li class="square-item">
+          <li class="square-item" v-for="item in data" :key="item.icon">
               <div class="list-item-title">
                   <div class="title-icon heart-rate">
-                      <i class="ic_like wh-30 ss-pink"></i>
+                      <i :class="[item.icon, 'wh-30']"></i>
                   </div>
                   <div class="detail-item-info">
-                      <h3>Heart rate</h3>
-                      <span>Today, 04:27 PM</span>
+                      <h3>{{item.title}}</h3>
+                      <span>{{item.subtitle}}</span>
                   </div>
               </div>
               <div class="item-fighre">
-                  <strong>82</strong> bpm
+                  <strong>{{item.figures}}</strong> {{item.unit}}
               </div>
           </li>
-          <li class="square-item">
+          <!-- <li class="square-item">
               <div class="list-item-title">
                   <div class="title-icon water">
                       <i class="ic_person wh-30 ss-blue"></i>
@@ -56,7 +56,7 @@
               <div class="item-fighre">
                   <strong>52</strong> kg
               </div>
-          </li>
+          </li> -->
         </ul>
     </div>
 </template>
@@ -65,10 +65,27 @@
     export default {
       name: "SquareList",
       data() {
-        return {};
+        return {
+            // item: {
+            //     icon: '',
+            //     title: '',
+            //     subtitle: '',
+            //     figures: '',
+            //     unit: ''
+            // }
+        };
       },
       components: {
 
+      },
+      props: {
+          data: {
+              type: Array,
+              default () { return [] }
+          }
+      },
+      mounted () {
+          console.log('mounted::', this.data)
       }
     };
 </script>

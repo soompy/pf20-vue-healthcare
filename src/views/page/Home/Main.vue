@@ -9,18 +9,17 @@
     </div>
     <!-- 상단 -->
 
-    <mini-calendar></mini-calendar>
+    <mini-calendar @selectDays="selDays"></mini-calendar>
 
     <!-- 진척도 콘텐츠 -->
     <auto-per></auto-per>
 
-    <square-list></square-list>
+    <square-list :data="squareArr"></square-list>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
 
 import AutoPer from "../../components/swiper/auto-per";
 import Profile from "../../components/layouts/profile";
@@ -34,6 +33,57 @@ export default {
     AutoPer,
     SquareList,
     MiniCalendar,
+  },
+  data () {
+    return {
+      squareArr: []
+    }
+  },
+  methods: {
+    selDays (day) {
+      console.log('manin::selDays::', day)
+      this.apiCall(day).then(res => {
+        console.log('apicall::then::', res)
+        this.squareArr = res
+      })
+    },
+    apiCall(day){
+      console.log('apiCall::', day)
+      return new Promise((resolve, reject) => {
+        setTimeout(_=>{
+          resolve([
+            {
+              icon: 'ic_like ss-pink',
+              title: 'Heart rete',
+              subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
+              figures: Math.floor(Math.random(100) * 100),
+              unit: 'bpm'
+            },
+             {
+              icon: 'ic_person ss-blue',
+              title: 'Water',
+              subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
+              figures: Math.floor(Math.random(100) * 100),
+              unit: 'ml'
+            },
+             {
+              icon: 'ic_time medium-grey',
+              title: 'Sleep',
+              subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
+              figures:  Math.floor(Math.random(100) * 100),
+              unit: 'Hours'
+            },
+             {
+              icon: 'ic_food white',
+              title: 'Weight',
+              subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
+              figures:  Math.floor(Math.random(100) * 100),
+              unit: 'kg'
+            },
+          ])
+        }, 2000)
+      })
+    } 
   }
 }
 </script>
