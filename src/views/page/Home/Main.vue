@@ -53,6 +53,7 @@ export default {
         setTimeout(_=>{
           resolve([
             {
+              iconBox: 'title-icon heart-rate',
               icon: 'ic_like ss-pink',
               title: 'Heart rete',
               subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
@@ -60,6 +61,7 @@ export default {
               unit: 'bpm'
             },
              {
+              iconBox: 'title-icon water',
               icon: 'ic_person ss-blue',
               title: 'Water',
               subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
@@ -67,6 +69,7 @@ export default {
               unit: 'ml'
             },
              {
+              iconBox: 'title-icon sleep',
               icon: 'ic_time medium-grey',
               title: 'Sleep',
               subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
@@ -74,6 +77,7 @@ export default {
               unit: 'Hours'
             },
              {
+              iconBox: 'title-icon weight',
               icon: 'ic_food white',
               title: 'Weight',
               subtitle: (new Date(`2021/${day.month}/${day.day}`)).toLocaleString(),
@@ -83,7 +87,7 @@ export default {
           ])
         }, 2000)
       })
-    } 
+    }
   }
 }
 </script>

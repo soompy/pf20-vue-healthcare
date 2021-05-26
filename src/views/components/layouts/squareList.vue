@@ -3,7 +3,7 @@
         <ul class="square-list">
           <li class="square-item" v-for="item in data" :key="item.icon">
               <div class="list-item-title">
-                  <div class="title-icon heart-rate">
+                  <div :class="[item.iconBox]">
                       <i :class="[item.icon, 'wh-30']"></i>
                   </div>
                   <div class="detail-item-info">
@@ -15,48 +15,6 @@
                   <strong>{{item.figures}}</strong> {{item.unit}}
               </div>
           </li>
-          <!-- <li class="square-item">
-              <div class="list-item-title">
-                  <div class="title-icon water">
-                      <i class="ic_person wh-30 ss-blue"></i>
-                  </div>
-                  <div class="detail-item-info">
-                      <h3>Water</h3>
-                      <span>Today, 04:27 PM</span>
-                  </div>
-              </div>
-              <div class="item-fighre">
-                  <strong>200</strong> ml
-              </div>
-          </li>
-          <li class="square-item">
-              <div class="list-item-title">
-                  <div class="title-icon sleep">
-                      <i class="ic_time wh-30 medium-grey"></i>
-                  </div>
-                  <div class="detail-item-info">
-                      <h3>Sleep</h3>
-                      <span>Today, 04:27 PM</span>
-                  </div>
-              </div>
-              <div class="item-fighre">
-                  <strong>6</strong> Hours
-              </div>
-          </li>
-          <li class="square-item">
-              <div class="list-item-title">
-                  <div class="title-icon weight">
-                      <i class="ic_food wh-30 white"></i>
-                  </div>
-                  <div class="detail-item-info">
-                      <h3>Weight</h3>
-                      <span>Today, 04:27 PM</span>
-                  </div>
-              </div>
-              <div class="item-fighre">
-                  <strong>52</strong> kg
-              </div>
-          </li> -->
         </ul>
     </div>
 </template>
@@ -67,6 +25,7 @@
       data() {
         return {
             // item: {
+            //     iconBox: '',
             //     icon: '',
             //     title: '',
             //     subtitle: '',
