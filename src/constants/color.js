@@ -1,11 +1,11 @@
 export default Object.freeze({
 // Primary
-    primary: '#FBC02D',
-    blue: '#3f51b5',
+    primary: '#FFCA28',
+    blue: '#1A237E',
 // Secondary
     tealish:'#80CBC4',
     aqua: '#00CBE2',
-    yelloworange: '#FFB300',
+    yelloworange: '#FFC107',
     green:'#26c68a',
     midPurple:'#5E35B1',
     red: '#E53935',

@@ -36,11 +36,11 @@
         watch: {
             value(newVal, oldVal) {
                 console.log('newVal::oldVal::template', newVal, oldVal)
-                this.checkValue() 
+                this.checkValue()
             }
         },
         created() {
-            
+
         },
         mounted() {},
         methods: {
@@ -90,7 +90,7 @@
         position: relative;
         text-align: center;
         padding: 0 4px;
-        background: #3f51b5;
+        background: #3F51B5;
         color: #FFFFFF;
         border-radius: 6px;
         &:after {
@@ -103,7 +103,7 @@
             width: 0px;
             height: 0px;
             border-top: 6px solid transparent;
-            border-bottom: 6px solid #3f51b5;
+            border-bottom: 6px solid #3F51B5;
             border-right: 6px solid transparent;
             border-left: 6px solid  transparent;
             transform: rotate(90deg);
@@ -120,7 +120,7 @@
         margin: 10px 0;
         box-shadow: 1px 2px 3px #eee;
         .progress-bar {
-            background: #FBC02D;
+            background: #FFCA28;
             left: 0;
             position: absolute;
             top: 0;

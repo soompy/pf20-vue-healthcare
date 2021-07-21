@@ -30,7 +30,9 @@
             <li><button><span class="sns-icon instagram"></span>인스타그램</button></li>
         </ul>
 
-        <buttons sizeType="large" shapeType="fill" colorType="primary">{{ loginBtn }}</buttons>
+        <buttons sizeType="large" shapeType="fill" colorType="primary" btnText="로그인" @click="login">
+            {{ loginBtn }}
+        </buttons>
     </div>
   </div>
 </template>
@@ -55,6 +57,11 @@
     components: {
         Buttons
 
+    },
+    methods: {
+        login () {
+            this.$router.push({path: `main`})
+        }
     }
   }
 </script>

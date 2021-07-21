@@ -96,7 +96,7 @@
                             z-index: -1;
                             width: 100%;
                             height: 5px;
-                            background: #FBC02D;
+                            background: #FFCA28;
                         }
                     }
                 }

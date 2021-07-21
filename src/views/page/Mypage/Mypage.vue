@@ -68,7 +68,7 @@
     display: block;
     strong {
       font-size: 18px;
-      color: #3f51b5;
+      color: #1A237E;
     }
   }
 
@@ -76,7 +76,7 @@
     padding: 8px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
     border-radius: 8px;
-    border: 2px solid #FBC02D;
+    border: 2px solid #FFCA28;
     background: #FFFFFF;
     .check-list-box {
       display: flex;

@@ -1,8 +1,8 @@
 <template>
     <div class="common_area">
-        <text-field></text-field>
+        <text-field class="ph-4p"></text-field>
 
-        <key-word-box></key-word-box>
+        <key-word-box class="ph-4p"></key-word-box>
 
         <div class="tag-wrap">
             <tag tag-text="혈압기" color-type="red"></tag>
@@ -13,8 +13,7 @@
             <tag tag-text="혈당체크방법" color-type="aqua"></tag>
         </div>
 
-        <check-box></check-box>
-
+        <check-box class="ph-4p"></check-box>
     </div>
 </template>
 
@@ -47,7 +46,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .common_area {
-        padding: 0 4vw;
-    }
+
 </style>

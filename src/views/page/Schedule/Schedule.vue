@@ -1,6 +1,7 @@
 <template>
     <div class="common_area">
         <calendar></calendar>
+
     </div>
 </template>
 

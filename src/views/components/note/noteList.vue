@@ -147,11 +147,11 @@
                         border-radius: 8px;
                         padding: 0 8px;
                         margin-right: 6px;
-                        background: #FBC02D; /* Old browsers */
-                        background: -moz-linear-gradient(-45deg,  #FBC02D 5%, #eeeeee 56%, #cccccc 100%, #cccccc 100%); /* FF3.6-15 */
-                        background: -webkit-linear-gradient(-45deg,  #FBC02D 5%,#eeeeee 56%,#cccccc 100%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
-                        background: linear-gradient(135deg,  #FBC02D 5%,#eeeeee 56%,#cccccc 100%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBC02D', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                        background: #FFCA28; /* Old browsers */
+                        background: -moz-linear-gradient(-45deg,  #FFCA28 5%, #eeeeee 56%, #cccccc 100%, #cccccc 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(-45deg,  #FFCA28 5%,#eeeeee 56%,#cccccc 100%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(135deg,  #FFCA28 5%,#eeeeee 56%,#cccccc 100%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFCA28', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
                     }
                     &::-webkit-scrollbar {
                         display: none;

@@ -71,15 +71,15 @@
 <style lang="scss" scoped>
     .basics {
         &.fill {
-            &.primary {background: #FBC02D;}
+            &.primary {background: #FFCA28;}
             &.grey {background: #ABABAB;color: #fff;text-shadow: 1px 1px 5px #1a1a1a;}
-            &.blue {background: #3f51b5;color: #fff;}
+            &.blue {background: #1A237E;color: #fff;}
             &:disabled {background: #ddd;}
         }
         &.outline {
             background: #ffffff;
-            &.primary {color: #FBC02D;border : 1px solid #FBC02D;}
-            &.blue {color: #3f51b5;border : 1px solid #3f51b5;}
+            &.primary {color: #FFCA28;border : 1px solid #FFCA28;}
+            &.blue {color: #1A237E;border : 1px solid #1A237E;}
             &:disabled {background: #dddddd;border: 1px solid #e0e0e0;}
         }
         &.large {
@@ -100,7 +100,7 @@
             height: 40px;
             border-radius: 50%;
             box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
-            &.round-fill {background: #3f51b5;}
+            &.round-fill {background: #1A237E;}
             &.round-line {border: 1px solid #ccc;background: #FFFFFF;}
         }
 

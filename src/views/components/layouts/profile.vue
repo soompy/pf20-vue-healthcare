@@ -37,7 +37,7 @@
             .under-line {
                 display: inline-block;
                 height: 19px;
-                box-shadow: 0 8px 0 0 #FBC02D, 0 8px 0 0 #FBC02D;
+                box-shadow: 0 8px 0 0 #FFCA28, 0 8px 0 0 #FFCA28;
             }
         }
         .profile-subtitle {

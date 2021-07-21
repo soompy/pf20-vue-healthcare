@@ -70,8 +70,8 @@
         .label-outline {
             border: 1px solid #1a1a1a;
             &.yellowOrange {
-                border: 1px solid #FFB300;
-                color: #FFB300;
+                border: 1px solid #FFC107;
+                color: #FFC107;
                 text-shadow: 1px 1px 2px #ddd;
             }
             &.aqua {
@@ -96,7 +96,7 @@
             background: #1a1a1a;
             color: #FFFFFF;
             &.yellowOrange {
-                background: #FFB300;
+                background: #FFC107;
                 color: #333;
             }
             &.aqua {
@@ -118,8 +118,8 @@
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
             color: #1a1a1a;
             &.yellowOrange {
-                background: linear-gradient(135deg,  #FFB300 5%,#eeeeee 56%,#FFB300 100%,#cccccc 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFB300', endColorstr='#cccccc',GradientType=1 );
+                background: linear-gradient(135deg,  #FFC107 5%,#eeeeee 56%,#FFC107 100%,#cccccc 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFC107', endColorstr='#cccccc',GradientType=1 );
             }
             &.aqua {
                 background: linear-gradient(135deg,  #40C3C4 5%,#eeeeee 56%,#40C3C4 100%,#cccccc 100%);

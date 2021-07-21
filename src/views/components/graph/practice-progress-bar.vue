@@ -5,7 +5,7 @@
         <div class="progress-wrap progress">
             <div class="progress-bar progress" :style="`width: ${val}%`"></div>
         </div>
-    </div>    
+    </div>
 </div>
 </template>
 
@@ -42,8 +42,8 @@
         watch: {
           value(newVal, oldVal) {
                 console.log('newVal::oldVal::template', newVal, oldVal)
-                this.checkValue() 
-            }  
+                this.checkValue()
+            }
         },
         created() {
             // this.checkValue();
@@ -72,7 +72,7 @@
         position: relative;
         text-align: center;
         padding: 0 4px;
-        background: #3f51b5;
+        background: #3F51B5;
         color: #FFFFFF;
         width: 30px;
         height: 26px;
@@ -87,7 +87,7 @@
             width: 0px;
             height: 0px;
             border-top: 13px solid transparent;
-            border-right: 13px solid #3f51b5;            
+            border-right: 13px solid #3F51B5;
             transform: rotate(45deg);
         }
     }
@@ -102,7 +102,7 @@
         margin: 10px 0;
         box-shadow: 1px 2px 3px #eee;
         .progress-bar {
-            background: #FBC02D;
+            background: #FFCA28;
             left: 0;
             position: absolute;
             top: 0;

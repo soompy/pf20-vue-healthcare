@@ -109,5 +109,9 @@ input[type=checkbox] {
   overflow-x: auto;
   flex-wrap: nowrap;
   margin: 16px 0 8px;
+  padding: 0 4vw;
+  span:last-child {
+    margin-right: 0 !important;
+  }
   &::-webkit-scrollbar {display: none;}
 }

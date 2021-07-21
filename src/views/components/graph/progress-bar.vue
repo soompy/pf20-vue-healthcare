@@ -33,11 +33,11 @@
         created() { // 최초 한번만 호출(this.value가 감지되지 못함)
             console.log('value', this.value)
             this.checkValue()
-        },        
+        },
         watch: { // methods 호출시엔 watch사용이 용이
             value(newVal, oldVal) {
                 console.log('newVal::oldVal::template', newVal, oldVal)
-                this.checkValue() 
+                this.checkValue()
             }
         },
         // computed는(return하는 함수가 반드시 있어야함) value를 받아서 처리결과를 return 하는 코드를 짜줘야 함
@@ -66,7 +66,7 @@
         position: relative;
         text-align: center;
         padding: 0 4px;
-        background: #3f51b5;
+        background: #3F51B5;
         color: #FFFFFF;
         border-radius: 6px;
         &:after {
@@ -79,7 +79,7 @@
             width: 0px;
             height: 0px;
             border-top: 6px solid transparent;
-            border-bottom: 6px solid #3f51b5;
+            border-bottom: 6px solid #3F51B5;
             border-right: 6px solid transparent;
             border-left: 6px solid  transparent;
             transform: rotate(90deg);
@@ -96,7 +96,7 @@
         margin: 10px 0;
         box-shadow: 1px 2px 3px #eee;
         .progress-bar {
-            background: #FBC02D;
+            background: #FFCA28;
             left: 0;
             position: absolute;
             top: 0;

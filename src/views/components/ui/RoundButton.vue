@@ -62,7 +62,7 @@
             height: 40px;
             border-radius: 50%;
             box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
-            &.round-fill {background: #3f51b5;}
+            &.round-fill {background: #1A237E;}
             &.round-line {border: 1px solid #ccc;background: #FFFFFF;}
             i {
                 width: 70%;
