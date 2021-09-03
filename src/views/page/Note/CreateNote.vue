@@ -63,7 +63,7 @@
         }
         .note-area {
           margin-top: 16px;
-          font-size: 13px;
+          font-size: 14px;
           height: 100%;
           height: 65vh;
           resize: none;

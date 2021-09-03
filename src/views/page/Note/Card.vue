@@ -1,10 +1,8 @@
 <template>
   <div class="common_area">
-    <!-- 상단 -->
-    <div class="visual pv-4p">
-      <profile></profile>
+    <div class="profile-box">
+      <strong class="profile-subtitle">건강 카드를 확인하세요!</strong>
     </div>
-    <!-- 상단 -->
 
     <card-ticket></card-ticket>
   </div>
