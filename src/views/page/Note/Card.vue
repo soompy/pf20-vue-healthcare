@@ -1,7 +1,7 @@
 <template>
   <div class="common_area">
     <div class="profile-box">
-      <strong class="profile-subtitle">건강 카드를 확인하세요!</strong>
+      <h2 class="profile-subtitle">건강 카드를 확인하세요!</h2>
     </div>
 
     <card-ticket></card-ticket>

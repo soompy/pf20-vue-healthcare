@@ -4,7 +4,7 @@
     <div class="visual pv-4p">
       <profile></profile>
       <div class="status-box">
-        <div class="nickname-info"><strong>A</strong>님의 진행도</div>
+        <div class="nickname-info"><strong>{{ userName }}</strong>님의 진행도</div>
       </div>
     </div>
     <!-- 상단 -->
@@ -12,7 +12,7 @@
     <mini-calendar @selectDays="selDays"></mini-calendar>
 
     <!-- 진척도 콘텐츠 -->
-    <auto-per></auto-per>
+    <auto-per class="ph-4p"></auto-per>
 
     <square-list :data="squareArr"></square-list>
   </div>
@@ -38,6 +38,12 @@ export default {
     return {
       squareArr: []
     }
+  },
+  props: {
+    userName: {
+      type: String,
+      default: '수리'
+    },
   },
   methods: {
     selDays (day) {
@@ -88,7 +94,7 @@ export default {
         }, 2000)
       })
     }
-  }
+  },
 }
 </script>
 
