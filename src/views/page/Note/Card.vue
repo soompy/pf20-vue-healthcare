@@ -29,6 +29,9 @@
 
 <style lang="scss" scoped>
   .common_area {
-
+    padding: 30px 0;
+  }
+  .profile-subtitle {
+    padding-bottom: 16px;
   }
 </style>

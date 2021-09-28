@@ -9,7 +9,8 @@
           </div>
         </div>
       </div>
-      <div class="content" v-on:click="addClass" :class="{'full': isAddClass}">
+      <div class="content" @click="addClass" :class="{'full': isAddClass}">
+<!--        @click="$emit('deleteClass', false)"-->
         <div class="articlemeta">
           <ul class="left">
             <li><i class="material-icons">&#xE15E;</i></li>
@@ -21,7 +22,7 @@
         </div>
         <div class="closebar">
           <h1>오늘의 건강 뉴스</h1>
-          <a class="closebttn" @click="$emit('deleteClass', false)"><i class="material-icons">&#xE5CD;</i></a>
+          <a class="closebtn" @click="deleteClass"><i class="material-icons">&#xE5CD;</i></a>
         </div>
 
         <div class="readmore">
@@ -56,7 +57,6 @@
     data() {
       return {
         isAddClass: false,
-        isRemoveClass: false,
       }
     },
     components: {
@@ -67,7 +67,8 @@
         this.isAddClass = true;
       },
       deleteClass() {
-        this.isRemoveClass = true;
+        // $ref.closeTarget.isAddClass = false;
+        this.$emit('close');
       },
     }
   }
@@ -232,7 +233,7 @@
         left: 0;
         border-bottom: 1px solid #EEE;
         background: white;
-        .closebttn {
+        .closebtn {
           position: absolute;
           right: 15px;
           top: -2px;
