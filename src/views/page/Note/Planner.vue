@@ -22,7 +22,7 @@ import TaskBox from "../../components/note/TaskBox";
       }
     },
     components: {
-        TaskBox,
+      TaskBox,
       MiniCalendar,
     },
   }
