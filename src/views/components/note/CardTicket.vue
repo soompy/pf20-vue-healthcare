@@ -9,8 +9,7 @@
           </div>
         </div>
       </div>
-      <div class="content" @click="addClass" :class="{'full': isAddClass}">
-<!--        @click="$emit('deleteClass', false)"-->
+      <div @click="addClass" v-bind:class="[isAddClass ? isFullClass : '', contentClass]">
         <div class="articlemeta">
           <ul class="left">
             <li><i class="material-icons">&#xE15E;</i></li>
@@ -47,7 +46,6 @@
       </div>
     </div>
   </div>
-<!--  https: //codepen.io/kitsune/pen/zKzRXQ-->
 </template>
 
 <script>
@@ -57,18 +55,16 @@
     data() {
       return {
         isAddClass: false,
+        isFullClass: 'full',
+        contentClass: 'content',
       }
-    },
-    components: {
-
     },
     methods: {
       addClass() {
         this.isAddClass = true;
       },
       deleteClass() {
-        // $ref.closeTarget.isAddClass = false;
-        this.$emit('close');
+        this.isAddClass = false;
       },
     }
   }
