@@ -2,8 +2,8 @@
     <div class="todolist-box">
         <p class="todo">뭐까</p>
         <div class="button">
-            <button class="check"><i class="ic_check wh-20 white"></i></button>
-            <button class="delete"></button>
+            <button class="check"><i class="ic_check wh-20 black"></i></button>
+            <button class="delete"><i class="ic_delete wh-20 black"></i></button>
         </div>
     </div>
 </template>
@@ -30,12 +30,18 @@
     .todolist-box {
         display: flex;
         align-items: center;
-        background: #cccccc;
-        color: #eeeeee;
+        background: #ffca28;
+        color: #000000;
+        padding: 8px 10px;
+        margin: 8px 0;
+        border-radius: 10px;
         .todo {
 
         }
-
+        .button {
+            display: flex;
+            margin-left: auto;
+        }
     }
 </style>
 c

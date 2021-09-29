@@ -5,7 +5,7 @@
         <!--    달력ui-->
         <mini-calendar :style="`position: fixed;z-index: 5;background: #ffffff;`"></mini-calendar>
 
-<!--        <todo-list></todo-list>-->
+        <todo-list></todo-list>
 
         <task-box></task-box>
 
