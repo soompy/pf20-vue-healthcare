@@ -148,7 +148,7 @@ $purple: #1a237e;
 
 .card {
   margin: 0px 30px;
-  width: 380px;
+  width: 92%;
   height: 600px;
   position: relative;
   border-radius: 6px;
