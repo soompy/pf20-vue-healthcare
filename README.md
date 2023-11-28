@@ -24,7 +24,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-### Vue로 구현한 헬스케어 웹
+### Vue로 구현한 헬스케어 웹 개인 포트폴리오
 HTML, CSS(SCSS), Javascript, Vue
 
 ### 화면 미리보기 이미지
